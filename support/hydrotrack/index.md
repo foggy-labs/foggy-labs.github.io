@@ -1,0 +1,45 @@
+---
+layout: default
+title: HydroTracker - Support
+---
+
+# HydroTracker: Water Tracker - Support
+
+Need help with HydroTracker? We're here for you.
+
+## Contact Us
+
+**Email:** [ben@thefoghill.com](mailto:ben@thefoghill.com)
+
+We typically respond within 24 hours.
+
+## Frequently Asked Questions
+
+**How do I log water intake?**
+On the home screen, select a beverage type from the Quick Add section, then tap one of the amount buttons (150ml, 250ml, 350ml, 500ml) or tap the custom button to enter a specific amount.
+
+**How does the daily goal work?**
+HydroTracker calculates a personalized daily water goal based on your weight, activity level, and local weather conditions. Go to the Daily Goal tab to adjust your settings.
+
+**What is the weather adjustment?**
+HydroTracker uses your local weather to adjust your daily water goal. On hot days, your goal increases automatically. You can toggle this on or off in the Daily Goal tab.
+
+**How does Apple Health integration work?**
+When enabled in Settings, HydroTracker reads and writes dietary water data to Apple Health. Your logged water intake is automatically synced so it appears in the Health app alongside your other health data.
+
+**How do I manage my subscription?**
+Go to your iPhone Settings > [Your Name] > Subscriptions > HydroTracker. You can upgrade, downgrade, or cancel from there. You can also manage your subscription from the Settings tab within the app.
+
+**How do I restore my purchases?**
+Open HydroTracker > Settings > Restore Purchases. This will restore any active subscriptions associated with your Apple ID.
+
+**How do I delete my data?**
+Your hydration data is stored locally on your device. Deleting the app will remove all local data. If you have Apple Health sync enabled, your water intake data will remain in Apple Health unless you delete it separately.
+
+**I found a bug. How do I report it?**
+Email us at ben@thefoghill.com with a description of the issue, your device model, and iOS version. Screenshots help!
+
+## Legal
+
+- [Privacy Policy](/privacy/hydrotrack/)
+- [Terms of Service](/terms/hydrotrack/)
