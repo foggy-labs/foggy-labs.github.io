@@ -5,7 +5,7 @@ title: Linkt - Privacy Policy
 
 # Linkt - Privacy Policy
 
-**Last Updated: April 2, 2026**
+**Last Updated: April 5, 2026**
 
 Linkt ("we," "us," or "our") operates the Linkt mobile application (the "App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App. Please read this policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the App.
 
@@ -84,19 +84,50 @@ The App is not directed to children under the age of 13. We do not knowingly col
 
 ## 7. Your Privacy Rights
 
-Depending on your location, you may have certain rights regarding your personal information, including the right to access, correct, or delete the personal information we hold about you. To exercise these rights, please contact us at the email address below.
+Depending on your location, you may have certain rights regarding your personal information, including the right to access, correct, or delete the personal information we hold about you. To exercise these rights, please contact us at ben@thefoghill.com.
 
-**California Residents.** If you are a California resident, you have certain rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information we collect, the right to delete personal information, and the right to opt out of the sale of personal information (we do not sell personal information).
+## 8. California Privacy Rights (CCPA/CPRA)
 
-## 8. Third-Party Links
+If you are a California resident, you have the following rights under the California Consumer Privacy Act and California Privacy Rights Act:
+
+- **Right to Know:** You may request that we disclose the categories and specific pieces of personal information we have collected about you.
+- **Right to Delete:** You may request that we delete the personal information we have collected about you.
+- **Right to Correct:** You may request that we correct inaccurate personal information.
+- **Right to Opt-Out:** You have the right to opt out of the sale or sharing of your personal information. We do not sell or share your personal information for cross-context behavioral advertising.
+- **Right to Non-Discrimination:** We will not discriminate against you for exercising any of your CCPA/CPRA rights.
+
+To exercise these rights, contact us at ben@thefoghill.com.
+
+## 9. European Privacy Rights (GDPR)
+
+If you are located in the European Economic Area (EEA) or United Kingdom, we process your data under the following legal bases:
+
+- **Contract performance:** To provide the App and its features as described in our Terms of Service
+- **Legitimate interests:** To improve the App, prevent fraud, and ensure security
+- **Consent:** For optional features like push notifications and community participation
+
+Under the GDPR, you have the right to:
+
+- Access the personal data we hold about you
+- Rectify inaccurate personal data
+- Request erasure of your personal data
+- Restrict or object to the processing of your personal data
+- Data portability — receive your data in a structured, machine-readable format
+- Withdraw consent at any time where processing is based on consent
+
+You have the right to lodge a complaint with your local data protection authority if you believe your rights have been violated.
+
+To exercise these rights, contact us at ben@thefoghill.com.
+
+## 10. Third-Party Links
 
 The App may contain links to third-party websites and services. We are not responsible for the privacy practices of these third parties and encourage you to review their privacy policies.
 
-## 9. Changes to This Privacy Policy
+## 11. Changes to This Privacy Policy
 
 We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.
 
-## 10. Contact Us
+## 12. Contact Us
 
 If you have questions or concerns about this Privacy Policy, please contact us at:
 
