@@ -5,7 +5,7 @@ title: CleanSnap - Terms of Service
 
 # CleanSnap - Terms of Service
 
-**Last Updated: April 2, 2026**
+**Last Updated: April 5, 2026**
 
 ## 1. Agreement to Terms
 
@@ -61,7 +61,7 @@ You agree not to use the App to:
 
 ### Our Content
 
-The App, including its design, features, functionality, and all content created by us, is owned by Fog Hill LLC and protected by applicable intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the App without our express written permission.
+The App, including its design, features, functionality, and all content created by us, is owned by Fog Hill LLC and protected by applicable intellectual property laws. You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes. You may not copy, modify, distribute, or create derivative works based on the App without our express written permission.
 
 ### Your Content
 
@@ -90,19 +90,23 @@ OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING FROM OR RELATED TO THE APP SHA
 
 You agree to indemnify, defend, and hold harmless Fog Hill LLC and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses arising from your use of the App, your violation of these Terms, or your violation of any rights of another party.
 
-## 12. Governing Law
+## 12. Termination
 
-These Terms are governed by the laws of the State of Delaware, United States, without regard to its conflict of law provisions. Any disputes arising from these Terms or your use of the App shall be resolved in the state or federal courts located in Delaware.
+We may suspend or terminate your access to the App at any time, with or without cause and with or without notice. Upon termination, your right to use the App ceases immediately. All provisions of these Terms which by their nature should survive termination shall survive, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
 
-## 13. Changes to Terms
+## 13. Governing Law
+
+These Terms are governed by the laws of the State of New York, United States, without regard to its conflict of law provisions. Any disputes arising from these Terms or your use of the App shall be resolved in the state or federal courts located in New York, New York.
+
+## 14. Changes to Terms
 
 We may update these Terms from time to time. We will notify you of material changes by posting the updated Terms in the App and updating the "Last Updated" date. Your continued use of the App after any changes constitutes your acceptance of the revised Terms.
 
-## 14. Contact Us
+## 15. Contact Us
 
 If you have questions about these Terms, please contact us:
 
 **Email:** ben@thefoghill.com
 **Company:** Fog Hill LLC
 
-These Terms are effective as of April 2, 2026.
+These Terms are effective as of April 5, 2026.

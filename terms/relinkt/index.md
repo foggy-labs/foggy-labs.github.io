@@ -5,7 +5,7 @@ title: Linkt - Terms of Service
 
 # Linkt - Terms of Service
 
-**Last Updated: April 2, 2026**
+**Last Updated: April 5, 2026**
 
 ## 1. Agreement to Terms
 
@@ -79,7 +79,7 @@ We reserve the right to remove content and terminate accounts that violate these
 
 ## 7. Intellectual Property
 
-The App and its original content, features, and functionality are owned by Fog Hill LLC and are protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the App without our express written permission.
+The App and its original content, features, and functionality are owned by Fog Hill LLC and are protected by copyright, trademark, and other intellectual property laws. You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes. You may not copy, modify, distribute, or create derivative works based on the App without our express written permission.
 
 ## 8. Disclaimers
 
@@ -91,15 +91,19 @@ The habit tracking and health information provided in the App is for information
 
 TO THE MAXIMUM EXTENT PERMITTED BY LAW, FOG HILL LLC SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF OR INABILITY TO USE THE APP, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
-## 10. Governing Law
+## 10. Termination
 
-These Terms shall be governed by and construed in accordance with the laws of the State of Delaware, without regard to its conflict of law provisions.
+We may suspend or terminate your access to the App at any time, with or without cause and with or without notice. Upon termination, your right to use the App ceases immediately. All provisions of these Terms which by their nature should survive termination shall survive, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
 
-## 11. Changes to Terms
+## 11. Governing Law
+
+These Terms are governed by the laws of the State of New York, United States, without regard to its conflict of law provisions. Any disputes arising from these Terms or your use of the App shall be resolved in the state or federal courts located in New York, New York.
+
+## 12. Changes to Terms
 
 We reserve the right to modify these Terms at any time. We will notify you of significant changes by posting the new Terms in the App and updating the "Last Updated" date. Your continued use of the App after changes become effective constitutes acceptance of the updated Terms.
 
-## 12. Contact Us
+## 13. Contact Us
 
 If you have questions about these Terms, please contact us at:
 
