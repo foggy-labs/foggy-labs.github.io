@@ -5,7 +5,7 @@ title: HydroTrack - Privacy Policy
 
 # HydroTrack - Privacy Policy
 
-**Last Updated: April 2, 2026**
+**Last Updated: April 5, 2026**
 
 HydroTrack ("we," "us," or "our") operates the HydroTrack mobile application (the "App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App. Please read this policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the App.
 
@@ -129,7 +129,18 @@ If you are located in the European Economic Area (EEA) or United Kingdom, we pro
 - **Legitimate interests:** To improve the App, prevent fraud, and ensure security
 - **Consent:** For optional features like push notifications and HealthKit integration
 
+Under the GDPR, you have the right to:
+
+- Access the personal data we hold about you
+- Rectify inaccurate personal data
+- Request erasure of your personal data
+- Restrict or object to the processing of your personal data
+- Data portability — receive your data in a structured, machine-readable format
+- Withdraw consent at any time where processing is based on consent
+
 You have the right to lodge a complaint with your local data protection authority if you believe your rights have been violated.
+
+To exercise these rights, contact us at ben@thefoghill.com.
 
 ## 12. Changes to This Privacy Policy
 
@@ -141,4 +152,4 @@ If you have questions about this Privacy Policy, please contact us:
 
 **Email:** ben@thefoghill.com
 
-This Privacy Policy is effective as of April 2, 2026.
+This Privacy Policy is effective as of April 5, 2026.

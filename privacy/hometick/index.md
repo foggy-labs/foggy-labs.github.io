@@ -5,7 +5,7 @@ title: HomeTick - Privacy Policy
 
 # HomeTick - Privacy Policy
 
-**Last Updated: April 4, 2026**
+**Last Updated: April 5, 2026**
 
 HomeTick ("we," "us," or "our") operates the HomeTick mobile application (the "App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App. Please read this policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the App.
 
@@ -92,7 +92,7 @@ To exercise any of these rights, please contact us at ben@thefoghill.com.
 
 ## 7. Children's Privacy
 
-The App is not directed to children under the age of 13. We do not knowingly collect personal data from children under 13.
+The App is not directed to children under the age of 13. We do not knowingly collect personal data from children under 13. If we learn that we have collected personal data from a child under 13, we will take steps to delete that data promptly. If you believe that a child under 13 has provided us with personal data, please contact us at ben@thefoghill.com.
 
 ## 8. International Data Transfers
 
@@ -100,7 +100,14 @@ Your data may be processed in the United States or other countries where our ser
 
 ## 9. California Privacy Rights (CCPA/CPRA)
 
-If you are a California resident, you have the right to know what personal data we collect, request deletion, and opt out of the sale of personal data. We do not sell your personal data. Contact us at ben@thefoghill.com.
+If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA):
+
+- The right to know what personal data we collect, use, and disclose
+- The right to request deletion of your personal data
+- The right to opt out of the sale of personal data — we do not sell your personal data
+- The right to non-discrimination for exercising your privacy rights
+
+To exercise these rights, contact us at ben@thefoghill.com.
 
 ## 10. European Privacy Rights (GDPR)
 
@@ -125,10 +132,10 @@ To exercise these rights, contact us at ben@thefoghill.com.
 
 ## 11. Changes to This Privacy Policy
 
-We may update this Privacy Policy from time to time. Your continued use of the App after any changes constitutes acceptance.
+We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated policy in the App and updating the "Last Updated" date. Your continued use of the App after any changes constitutes your acceptance of the revised policy.
 
 ## 12. Contact Us
 
 **Email:** ben@thefoghill.com
 
-This Privacy Policy is effective as of April 4, 2026.
+This Privacy Policy is effective as of April 5, 2026.
