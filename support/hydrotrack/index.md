@@ -1,6 +1,7 @@
 ---
 layout: default
 title: HydroTrack - Support
+favicon_emoji: "💧"
 ---
 
 # HydroTrack: Water Tracker - Support

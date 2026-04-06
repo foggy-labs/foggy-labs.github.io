@@ -1,6 +1,7 @@
 ---
 layout: default
 title: PayDown - Privacy Policy
+favicon_emoji: "💳"
 ---
 
 # PayDown - Privacy Policy

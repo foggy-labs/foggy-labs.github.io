@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Gallery - Support
+favicon_emoji: "🖼️"
 ---
 
 # Gallery — Support

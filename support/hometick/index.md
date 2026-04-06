@@ -1,6 +1,7 @@
 ---
 layout: default
 title: HomeTick - Support
+favicon_emoji: "🏠"
 ---
 
 # HomeTick: Home Maintenance Tracker - Support

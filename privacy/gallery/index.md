@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Gallery - Privacy Policy
+favicon_emoji: "🖼️"
 ---
 
 # Gallery - Privacy Policy

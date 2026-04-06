@@ -1,6 +1,7 @@
 ---
 layout: default
 title: HomeTick - Terms of Service
+favicon_emoji: "🏠"
 ---
 
 # HomeTick - Terms of Service

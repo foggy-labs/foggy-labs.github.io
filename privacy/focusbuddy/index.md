@@ -1,6 +1,7 @@
 ---
 layout: default
 title: FocusBuddy - Privacy Policy
+favicon_emoji: "🎯"
 ---
 
 # FocusBuddy - Privacy Policy

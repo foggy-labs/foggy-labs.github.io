@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Linkt - Terms of Service
+favicon_emoji: "🔗"
 ---
 
 # Linkt - Terms of Service

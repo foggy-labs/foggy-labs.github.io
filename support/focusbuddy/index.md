@@ -1,6 +1,7 @@
 ---
 layout: default
 title: FocusBuddy - Support
+favicon_emoji: "🎯"
 ---
 
 # FocusBuddy: Focus Timer - Support

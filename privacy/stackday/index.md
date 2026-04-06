@@ -1,6 +1,7 @@
 ---
 layout: default
 title: StackDay - Privacy Policy
+favicon_emoji: "💊"
 ---
 
 # StackDay - Privacy Policy

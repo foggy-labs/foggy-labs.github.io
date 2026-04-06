@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Linkt - Privacy Policy
+favicon_emoji: "🔗"
 ---
 
 # Linkt - Privacy Policy

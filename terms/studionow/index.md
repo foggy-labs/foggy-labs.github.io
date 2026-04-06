@@ -1,6 +1,7 @@
 ---
 layout: default
 title: StudioNow - Terms of Service
+favicon_emoji: "🎨"
 ---
 
 # StudioNow - Terms of Service

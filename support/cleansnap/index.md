@@ -1,6 +1,7 @@
 ---
 layout: default
 title: CleanSnap - Support
+favicon_emoji: "📷"
 ---
 
 # CleanSnap - Support

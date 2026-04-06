@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SkinCycle - Terms of Service
+favicon_emoji: "🌿"
 ---
 
 # SkinCycle - Terms of Service

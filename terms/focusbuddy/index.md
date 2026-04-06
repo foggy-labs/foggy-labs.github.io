@@ -1,6 +1,7 @@
 ---
 layout: default
 title: FocusBuddy - Terms of Service
+favicon_emoji: "🎯"
 ---
 
 # FocusBuddy - Terms of Service

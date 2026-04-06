@@ -1,6 +1,7 @@
 ---
 layout: default
 title: HydroTrack - Privacy Policy
+favicon_emoji: "💧"
 ---
 
 # HydroTrack - Privacy Policy

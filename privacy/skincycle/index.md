@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SkinCycle - Privacy Policy
+favicon_emoji: "🌿"
 ---
 
 # SkinCycle - Privacy Policy

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: CleanSnap - Privacy Policy
+favicon_emoji: "📷"
 ---
 
 # CleanSnap - Privacy Policy

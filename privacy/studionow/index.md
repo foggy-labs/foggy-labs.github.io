@@ -1,6 +1,7 @@
 ---
 layout: default
 title: StudioNow - Privacy Policy
+favicon_emoji: "🎨"
 ---
 
 # StudioNow - Privacy Policy

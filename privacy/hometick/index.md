@@ -1,6 +1,7 @@
 ---
 layout: default
 title: HomeTick - Privacy Policy
+favicon_emoji: "🏠"
 ---
 
 # HomeTick - Privacy Policy

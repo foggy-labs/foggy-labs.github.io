@@ -1,6 +1,7 @@
 ---
 layout: default
 title: PayDown - Support
+favicon_emoji: "💳"
 ---
 
 # PayDown: Debt Payoff Tracker - Support

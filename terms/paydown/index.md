@@ -1,6 +1,7 @@
 ---
 layout: default
 title: PayDown - Terms of Service
+favicon_emoji: "💳"
 ---
 
 # PayDown - Terms of Service

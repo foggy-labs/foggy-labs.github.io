@@ -1,6 +1,7 @@
 ---
 layout: default
 title: StackDay - Terms of Service
+favicon_emoji: "💊"
 ---
 
 # StackDay - Terms of Service

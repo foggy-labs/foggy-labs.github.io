@@ -1,6 +1,7 @@
 ---
 layout: default
 title: CleanSnap - Terms of Service
+favicon_emoji: "📷"
 ---
 
 # CleanSnap - Terms of Service

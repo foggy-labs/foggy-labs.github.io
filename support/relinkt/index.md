@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Linkt - Support
+favicon_emoji: "🔗"
 ---
 
 # Linkt - Support

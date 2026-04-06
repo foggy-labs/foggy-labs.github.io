@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Gallery - Terms of Service
+favicon_emoji: "🖼️"
 ---
 
 # Gallery - Terms of Service

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: StackDay - Support
+favicon_emoji: "💊"
 ---
 
 # StackDay: Supplement Stack Tracker - Support

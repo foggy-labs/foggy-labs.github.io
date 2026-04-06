@@ -1,6 +1,7 @@
 ---
 layout: default
 title: SkinCycle - Support
+favicon_emoji: "🌿"
 ---
 
 # SkinCycle: Skincare Routine Tracker - Support

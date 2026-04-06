@@ -1,6 +1,7 @@
 ---
 layout: default
 title: HydroTrack - Terms of Service
+favicon_emoji: "💧"
 ---
 
 # HydroTrack - Terms of Service
