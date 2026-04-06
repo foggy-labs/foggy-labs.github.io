@@ -101,11 +101,19 @@ We may suspend or terminate your access to the App at any time, with or without 
 
 These Terms are governed by the laws of the State of New York, United States, without regard to its conflict of law provisions. Any disputes arising from these Terms or your use of the App shall be resolved in the state or federal courts located in New York, New York.
 
-## 15. Changes to Terms
+## 15. Dispute Resolution
+
+Any dispute arising from these Terms or your use of the App shall first be attempted to be resolved through good-faith negotiation. If negotiation fails, disputes shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association, conducted in New York, New York.
+
+## 16. Severability
+
+If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.
+
+## 17. Changes to Terms
 
 We may update these Terms from time to time. We will notify you of material changes by posting the updated Terms in the App and updating the "Last Updated" date. Your continued use of the App after any changes constitutes your acceptance of the revised Terms.
 
-## 16. Contact Us
+## 18. Contact Us
 
 If you have questions about these Terms, please contact us:
 

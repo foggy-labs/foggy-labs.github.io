@@ -60,11 +60,19 @@ Disputes shall be resolved through binding arbitration in New York, New York, in
 
 These Terms are governed by the laws of the State of New York.
 
-## 12. Changes to Terms
+## 12. Indemnification
+
+You agree to indemnify, defend, and hold harmless Fog Hill LLC and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses arising from your use of the App, your violation of these Terms, or your violation of any rights of another party.
+
+## 13. Severability
+
+If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.
+
+## 14. Changes to Terms
 
 We may update these Terms from time to time. Continued use constitutes acceptance.
 
-## 13. Contact Us
+## 15. Contact Us
 
 **Email:** ben@thefoghill.com
 

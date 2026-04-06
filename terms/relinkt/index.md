@@ -99,11 +99,23 @@ We may suspend or terminate your access to the App at any time, with or without 
 
 These Terms are governed by the laws of the State of New York, United States, without regard to its conflict of law provisions. Any disputes arising from these Terms or your use of the App shall be resolved in the state or federal courts located in New York, New York.
 
-## 12. Changes to Terms
+## 12. Indemnification
+
+You agree to indemnify, defend, and hold harmless Fog Hill LLC and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses arising from your use of the App, your violation of these Terms, your violation of any rights of another party, or any content you create or share through the App.
+
+## 13. Dispute Resolution
+
+Any dispute arising from these Terms or your use of the App shall first be attempted to be resolved through good-faith negotiation. If negotiation fails, disputes shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association, conducted in New York, New York.
+
+## 14. Severability
+
+If any provision of these Terms is found to be unenforceable, the remaining provisions will continue in full force and effect.
+
+## 15. Changes to Terms
 
 We reserve the right to modify these Terms at any time. We will notify you of significant changes by posting the new Terms in the App and updating the "Last Updated" date. Your continued use of the App after changes become effective constitutes acceptance of the updated Terms.
 
-## 13. Contact Us
+## 16. Contact Us
 
 If you have questions about these Terms, please contact us at:
 

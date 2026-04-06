@@ -54,13 +54,16 @@ We use the information we collect to:
 
 We may share your information in the following circumstances:
 
-**Service Providers.** We share information with third-party vendors and service providers that perform services on our behalf, including:
-- **PostHog** — Product analytics and user behavior analysis
-- **Sentry** — Crash reporting and error tracking
-- **AppsFlyer** — Mobile attribution and marketing analytics
-- **Meta (Facebook)** — Attribution and advertising measurement
-- **RevenueCat** — Subscription management and payment processing
-- **Supabase** — Backend database and authentication services
+**Service Providers.** We share information with third-party vendors and service providers that perform services on our behalf:
+
+| Service | Purpose | Data Shared |
+|---------|---------|-------------|
+| PostHog | Product analytics and user behavior analysis | Event data, user ID, session info |
+| Sentry | Crash reporting and error tracking | Stack traces, device info, user context |
+| AppsFlyer | Mobile attribution and marketing analytics | Installation data, IDFA, device info |
+| Meta (Facebook) | Attribution and advertising measurement | Install data, in-app events, device ID |
+| RevenueCat | Subscription management and payment processing | Purchase data, entitlements, user ID |
+| Supabase | Backend database and authentication services | Account data, user-generated content |
 
 **Legal Obligations.** We may disclose your information if required to do so by law or in response to valid requests by public authorities.
 
