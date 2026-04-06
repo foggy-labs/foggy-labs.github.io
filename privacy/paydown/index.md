@@ -139,7 +139,7 @@ Under the GDPR, you have the right to:
 
 You have the right to lodge a complaint with your local data protection authority if you believe your rights have been violated.
 
-To exercise these rights, contact us at ben@thefoghill.com.
+To exercise these rights, contact us at ben@thefoghill.com. We will respond to verified requests within 30 days.
 
 ## 12. Changes to This Privacy Policy
 
