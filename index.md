@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Foggy Labs
+favicon_emoji: 🌁
 ---
 
 # Foggy Labs
