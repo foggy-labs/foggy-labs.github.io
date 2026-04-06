@@ -122,15 +122,21 @@ You have the right to lodge a complaint with your local data protection authorit
 
 To exercise these rights, contact us at ben@thefoghill.com.
 
-## 10. Third-Party Links
+## 10. International Data Transfers
+
+Your information may be transferred to and processed in countries other than your country of residence, including the United States. These countries may have data protection laws that differ from the laws of your country. When we transfer your data, we take appropriate safeguards to ensure your information remains protected in accordance with this Privacy Policy.
+
+If you are in the EEA or UK, we rely on appropriate legal mechanisms for international transfers, including Standard Contractual Clauses approved by the European Commission and any additional safeguards required by applicable law.
+
+## 11. Third-Party Links
 
 The App may contain links to third-party websites and services. We are not responsible for the privacy practices of these third parties and encourage you to review their privacy policies.
 
-## 11. Changes to This Privacy Policy
+## 12. Changes to This Privacy Policy
 
 We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.
 
-## 12. Contact Us
+## 13. Contact Us
 
 If you have questions or concerns about this Privacy Policy, please contact us at:
 

@@ -130,7 +130,18 @@ If you are located in the European Economic Area (EEA) or United Kingdom, we pro
 - **Legitimate interests:** To improve the App, prevent fraud, and ensure security
 - **Consent:** For optional features like push notifications
 
+Under the GDPR, you have the right to:
+
+- Access the personal data we hold about you
+- Rectify inaccurate personal data
+- Request erasure of your personal data
+- Restrict or object to the processing of your personal data
+- Data portability — receive your data in a structured, machine-readable format
+- Withdraw consent at any time where processing is based on consent
+
 You have the right to lodge a complaint with your local data protection authority if you believe your rights have been violated.
+
+To exercise these rights, contact us at ben@thefoghill.com.
 
 ## 12. Changes to This Privacy Policy
 

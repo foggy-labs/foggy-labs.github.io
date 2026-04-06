@@ -104,7 +104,24 @@ If you are a California resident, you have the right to know what personal data 
 
 ## 10. European Privacy Rights (GDPR)
 
-If you are located in the EEA or United Kingdom, we process your data under contract performance, legitimate interests, and consent. You have the right to lodge a complaint with your local data protection authority.
+If you are located in the European Economic Area (EEA) or United Kingdom, we process your data under the following legal bases:
+
+- **Contract performance:** To provide the App and its features as described in our Terms of Service
+- **Legitimate interests:** To improve the App, prevent fraud, and ensure security
+- **Consent:** For optional features like push notifications
+
+Under the GDPR, you have the right to:
+
+- Access the personal data we hold about you
+- Rectify inaccurate personal data
+- Request erasure of your personal data
+- Restrict or object to the processing of your personal data
+- Data portability — receive your data in a structured, machine-readable format
+- Withdraw consent at any time where processing is based on consent
+
+You have the right to lodge a complaint with your local data protection authority if you believe your rights have been violated.
+
+To exercise these rights, contact us at ben@thefoghill.com.
 
 ## 11. Changes to This Privacy Policy
 
