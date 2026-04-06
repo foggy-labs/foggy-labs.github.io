@@ -18,3 +18,4 @@ Independent iOS app studio based in New York City.
 - **[Linkt](/linkt/)** — Habit streak tracker with community challenges and gamification. [Privacy Policy](/privacy/relinkt/) · [Terms of Service](/terms/relinkt/) · [Support](/support/relinkt/)
 - **[CleanSnap](/cleansnap/)** — On-device AI photo cleanup and enhancement. [Privacy Policy](/privacy/cleansnap/) · [Terms of Service](/terms/cleansnap/) · [Support](/support/cleansnap/)
 - **[StudioNow](/studionow/)** — Connecting NYC artists with affordable studio spaces. [Privacy Policy](/privacy/studionow/) · [Terms of Service](/terms/studionow/) · [Support](/support/studionow/)
+- **[Gallery](/gallery/)** — Discover NYC art exhibitions, track gallery visits, and follow your favorite artists and galleries. [Privacy Policy](/privacy/gallery/) · [Terms of Service](/terms/gallery/) · [Support](/support/gallery/)
