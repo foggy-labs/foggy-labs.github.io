@@ -4,8 +4,7 @@ theme: minima
 baseurl: ""
 url: "https://foggy-labs.github.io"
 
-header_pages:
-  - index.md
+header_pages: []
 
 plugins:
   - jekyll-sitemap
