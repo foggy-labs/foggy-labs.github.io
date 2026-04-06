@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudioNow - Find Studio Space in NYC for Artists | Foggy Labs</title>
+  <meta name="description" content="StudioNow: Find affordable studio and creative workspace in New York City. Smart matching for artists across all 5 boroughs. Download free on the App Store.">
+  <link rel="canonical" href="https://foggy-labs.github.io/studionow/">
+  <!-- Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=APP_ID_NEEDED">
+  <!-- Open Graph -->
+  <meta property="og:title" content="StudioNow - Find Studio Space in NYC for Artists">
+  <meta property="og:description" content="Find affordable creative workspace in New York City. Smart matching for artists across all 5 boroughs.">
+  <meta property="og:url" content="https://foggy-labs.github.io/studionow/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Foggy Labs">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "StudioNow",
+    "description": "iOS app connecting New York City artists with affordable studio and creative workspace. Smart matching by borough, budget, dates, and discipline.",
+    "url": "https://foggy-labs.github.io/studionow/",
+    "applicationCategory": "LifestyleApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "operatingSystem": "iOS"
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --violet-600: #7c3aed;
+      --violet-700: #6d28d9;
+      --violet-50: #f5f3ff;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --gray-900: #111827;
+      --white: #ffffff;
+      --green-600: #059669;
+      --radius: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+      color: var(--gray-800);
+      line-height: 1.6;
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--gray-200);
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gray-900);
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--violet-600); }
+
+    header nav a {
+      color: var(--gray-600);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      margin-left: 24px;
+    }
+
+    header nav a:hover { color: var(--gray-900); }
+
+    /* Hero */
+    .hero {
+      padding: 64px 0 48px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--violet-50);
+      color: var(--violet-600);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+      letter-spacing: 0.02em;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--gray-900);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--gray-600);
+      max-width: 540px;
+      margin: 0 auto 32px;
+    }
+
+    .app-store-badge {
+      display: inline-block;
+      transition: transform 0.15s ease;
+    }
+
+    .app-store-badge:hover { transform: scale(1.05); }
+
+    .app-store-badge img {
+      height: 54px;
+      width: auto;
+    }
+
+    .hero-subtext {
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--gray-500);
+    }
+
+    /* Problem / Solution */
+    .problem-solution {
+      padding: 64px 0;
+      background: var(--gray-50);
+    }
+
+    .ps-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .ps-card {
+      padding: 32px;
+      border-radius: var(--radius);
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+    }
+
+    .ps-card h3 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+
+    .ps-card.problem h3 { color: var(--gray-500); }
+    .ps-card.solution h3 { color: var(--violet-600); }
+
+    .ps-card h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .ps-card p {
+      font-size: 16px;
+      color: var(--gray-600);
+      line-height: 1.7;
+    }
+
+    /* Features */
+    .features {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-header h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-header p {
+      font-size: 17px;
+      color: var(--gray-500);
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .feature-card {
+      padding: 28px;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .feature-card:hover {
+      border-color: var(--violet-600);
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.08);
+    }
+
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--violet-50);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+
+    .feature-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      font-size: 15px;
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+
+    /* NYC Banner */
+    .nyc-banner {
+      padding: 64px 0;
+      background: var(--gray-900);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .nyc-banner h2 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .nyc-banner p {
+      font-size: 17px;
+      color: #9ca3af;
+      max-width: 560px;
+      margin: 0 auto 32px;
+    }
+
+    .borough-list {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .borough {
+      text-align: center;
+    }
+
+    .borough .icon {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .borough span {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: #d1d5db;
+    }
+
+    /* Pricing */
+    .pricing {
+      padding: 80px 0;
+      background: var(--gray-50);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .price-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      text-align: center;
+    }
+
+    .price-card.featured {
+      border-color: var(--violet-600);
+      box-shadow: 0 4px 24px rgba(124, 58, 237, 0.12);
+      position: relative;
+    }
+
+    .price-card.featured::before {
+      content: 'Best Value';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--violet-600);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .price-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 8px;
+    }
+
+    .price-amount {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--gray-900);
+      line-height: 1;
+    }
+
+    .price-amount span {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--gray-500);
+    }
+
+    .price-card .price-detail {
+      font-size: 13px;
+      color: var(--gray-500);
+      margin-top: 4px;
+      margin-bottom: 20px;
+    }
+
+    .price-card ul {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+
+    .price-card ul li {
+      font-size: 14px;
+      color: var(--gray-600);
+      padding: 6px 0;
+      padding-left: 22px;
+      position: relative;
+    }
+
+    .price-card ul li::before {
+      content: '\2713';
+      position: absolute;
+      left: 0;
+      color: var(--green-600);
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--violet-600);
+      color: var(--white);
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s ease;
+      width: 100%;
+      text-align: center;
+    }
+
+    .btn-primary:hover { background: var(--violet-700); }
+
+    .btn-secondary {
+      display: inline-block;
+      background: var(--gray-100);
+      color: var(--gray-700);
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s ease;
+      width: 100%;
+      text-align: center;
+    }
+
+    .btn-secondary:hover { background: var(--gray-200); }
+
+    .pricing-note {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 13px;
+      color: var(--gray-500);
+    }
+
+    /* Disclaimer */
+    .disclaimer {
+      padding: 32px 0;
+      text-align: center;
+    }
+
+    .disclaimer p {
+      font-size: 13px;
+      color: var(--gray-500);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    /* FAQ */
+    .faq {
+      padding: 80px 0;
+      background: var(--gray-50);
+    }
+
+    .faq-list {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .faq-item summary {
+      padding: 20px 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--gray-900);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-item summary::-webkit-details-marker { display: none; }
+
+    .faq-item summary::after {
+      content: '+';
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--gray-500);
+    }
+
+    .faq-item[open] summary::after {
+      content: '\2212';
+    }
+
+    .faq-item .answer {
+      padding-bottom: 20px;
+      font-size: 15px;
+      color: var(--gray-600);
+      line-height: 1.7;
+    }
+
+    /* CTA */
+    .cta {
+      padding: 80px 0;
+      text-align: center;
+      background: var(--violet-50);
+    }
+
+    .cta h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      font-size: 17px;
+      color: var(--gray-600);
+      margin-bottom: 28px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 32px 0;
+      border-top: 1px solid var(--gray-200);
+      text-align: center;
+    }
+
+    footer nav a {
+      color: var(--gray-500);
+      text-decoration: none;
+      font-size: 14px;
+      margin: 0 12px;
+    }
+
+    footer nav a:hover { color: var(--gray-700); }
+
+    footer .copyright {
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--gray-500);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero { padding: 48px 0 36px; }
+      .hero h1 { font-size: 32px; }
+      .hero p { font-size: 16px; }
+      .ps-grid { grid-template-columns: 1fr; gap: 20px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; max-width: 360px; }
+      .borough-list { gap: 20px; }
+      .section-header h2 { font-size: 26px; }
+      .cta h2 { font-size: 26px; }
+      header nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="https://foggy-labs.github.io/" class="logo">Foggy <span>Labs</span></a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">Made for NYC Artists</div>
+      <h1>Find Your Studio.<br>Make Your Art.</h1>
+      <p>StudioNow connects New York City artists with affordable studio and creative workspace. Smart matching by borough, budget, dates, and discipline.</p>
+      <a href="https://apps.apple.com/app/studionow/id0000000000" class="app-store-badge" aria-label="Download StudioNow on the App Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" loading="eager">
+      </a>
+      <p class="hero-subtext">Free to join. Create your artist profile today.</p>
+    </div>
+  </section>
+
+  <!-- Problem / Solution -->
+  <section class="problem-solution">
+    <div class="container">
+      <div class="ps-grid">
+        <div class="ps-card problem">
+          <h3>The Problem</h3>
+          <h2>Finding affordable studio space in NYC is a nightmare</h2>
+          <p>Sky-high rents, endless Craigslist scrolling, spaces that don&apos;t fit your medium. Painters need north light. Musicians need soundproofing. Sculptors need floor space. Generic listings don&apos;t cut it.</p>
+        </div>
+        <div class="ps-card solution">
+          <h3>The Solution</h3>
+          <h2>Smart matching that finds your perfect studio</h2>
+          <p>Tell StudioNow what you need&mdash;your borough preference, budget, dates, and discipline&mdash;and get matched to spaces built for artists like you. Apply directly in the app. No middlemen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Everything in One Place</h2>
+        <p>From profile to match to application, all in the app.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">&#127775;</div>
+          <h3>Smart Matching</h3>
+          <p>Get matched to spaces by borough, budget, available dates, and creative discipline. No more scrolling through irrelevant listings.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#127912;</div>
+          <h3>Artist Profiles</h3>
+          <p>Showcase your discipline, portfolio link, and studio requirements. Let spaces know exactly who you are and what you need.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#128203;</div>
+          <h3>Easy Applications</h3>
+          <p>Apply to matched spaces directly in the app. Track application status and communicate with space managers without leaving StudioNow.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#9878;</div>
+          <h3>Mediation Services</h3>
+          <p>Pro subscribers get access to tenant-landlord mediation support when issues arise. We&apos;ve got your back.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NYC Banner -->
+  <section class="nyc-banner">
+    <div class="container">
+      <h2>Built for New York City Artists</h2>
+      <p>From Brooklyn studios to the Bronx&mdash;find creative workspace across all five boroughs.</p>
+      <div class="borough-list">
+        <div class="borough">
+          <div class="icon">&#127961;</div>
+          <span>Manhattan</span>
+        </div>
+        <div class="borough">
+          <div class="icon">&#127961;</div>
+          <span>Brooklyn</span>
+        </div>
+        <div class="borough">
+          <div class="icon">&#127961;</div>
+          <span>Queens</span>
+        </div>
+        <div class="borough">
+          <div class="icon">&#127961;</div>
+          <span>The Bronx</span>
+        </div>
+        <div class="borough">
+          <div class="icon">&#127961;</div>
+          <span>Staten Island</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2>Create a Profile. Start Matching.</h2>
+        <p>Basic access is free. Go Pro for priority matching and mediation.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Free</h3>
+          <div class="price-amount">$0</div>
+          <p class="price-detail">Forever</p>
+          <ul>
+            <li>Artist profile</li>
+            <li>Limited studio matches</li>
+            <li>Public space listings</li>
+          </ul>
+          <a href="https://apps.apple.com/app/studionow/id0000000000" class="btn-secondary">Get Started</a>
+        </div>
+        <div class="price-card featured">
+          <h3>Pro Annual</h3>
+          <div class="price-amount">$34.99<span>/yr</span></div>
+          <p class="price-detail">$2.92/month, save 41%</p>
+          <ul>
+            <li>Unlimited matches</li>
+            <li>Priority matching</li>
+            <li>Advanced filters</li>
+            <li>Mediation services</li>
+          </ul>
+          <a href="https://apps.apple.com/app/studionow/id0000000000" class="btn-primary">Download Free</a>
+        </div>
+        <div class="price-card">
+          <h3>Pro Monthly</h3>
+          <div class="price-amount">$4.99<span>/mo</span></div>
+          <p class="price-detail">Cancel anytime</p>
+          <ul>
+            <li>Unlimited matches</li>
+            <li>Priority matching</li>
+            <li>Advanced filters</li>
+            <li>Mediation services</li>
+          </ul>
+          <a href="https://apps.apple.com/app/studionow/id0000000000" class="btn-secondary">Download Free</a>
+        </div>
+      </div>
+      <p class="pricing-note">Subscriptions auto-renew. Cancel anytime in Settings &gt; Subscriptions.</p>
+    </div>
+  </section>
+
+  <!-- Disclaimer -->
+  <section class="disclaimer">
+    <div class="container">
+      <p>StudioNow is a matching platform, not a landlord. We do not own, manage, or guarantee any studio spaces listed through the app. All agreements are between artists and space providers directly.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How does studio matching work?</summary>
+          <div class="answer">Fill out the Studio Needs Form with your borough preferences, budget, available dates, and space requirements. StudioNow matches you with available studios that fit your criteria. You can then review matches and apply directly in the app.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need an account?</summary>
+          <div class="answer">Yes. StudioNow requires an artist profile to use matching features. You must be at least 18 years old. Your profile includes your artistic discipline, studio requirements, and an optional portfolio link.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What boroughs does StudioNow cover?</summary>
+          <div class="answer">StudioNow currently covers all five boroughs: Manhattan, Brooklyn, Queens, The Bronx, and Staten Island. Use the borough filter in your Studio Needs Form to narrow matches to your preferred areas.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What are mediation services?</summary>
+          <div class="answer">Pro subscribers can access tenant-landlord mediation support through the app. If issues arise with a studio arrangement, our mediation service helps facilitate resolution between artists and space providers.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I cancel my subscription?</summary>
+          <div class="answer">Go to iPhone Settings &gt; [Your Name] &gt; Subscriptions &gt; StudioNow. You can cancel anytime and keep Pro access until the end of your billing period.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Find Your Studio in NYC</h2>
+      <p>Create your artist profile and start matching with spaces today.</p>
+      <a href="https://apps.apple.com/app/studionow/id0000000000" class="app-store-badge" aria-label="Download StudioNow on the App Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" loading="eager">
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <nav>
+        <a href="/privacy/studionow/">Privacy Policy</a>
+        <a href="/terms/studionow/">Terms of Service</a>
+        <a href="/support/studionow/">Support</a>
+        <a href="/">Foggy Labs</a>
+      </nav>
+      <p class="copyright">&copy; 2026 Fog Hill LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
