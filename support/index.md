@@ -19,7 +19,6 @@ Need help with one of our apps? Find your app below.
 - **[StudioNow Support](/support/studionow/)** — NYC artist studio spaces
 - **[Gallery Support](/support/gallery/)** — NYC art exhibitions tracker
 - **[Linkt Support](/support/relinkt/)** — Habit streak tracker
-- **[FocusBuddy Support](/support/focusbuddy/)** — Pomodoro focus timer
 
 ## Contact Us
 
