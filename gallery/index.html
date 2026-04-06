@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖼️</text></svg>">
+  <title>Gallery — NYC Art Exhibitions for iPhone | Foggy Labs</title>
+  <meta name="description" content="Gallery: Discover NYC contemporary art exhibitions, track galleries you've visited, and save shows you want to see. Free on the App Store.">
+  <link rel="canonical" href="https://foggy-labs.github.io/gallery/">
+  <!-- Smart App Banner (App ID to be added after App Store submission) -->
+  <!-- <meta name="apple-itunes-app" content="app-id=APP_ID_NEEDED"> -->
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gallery — NYC Art Exhibitions for iPhone">
+  <meta property="og:description" content="Discover NYC contemporary art exhibitions, track galleries you've visited, and save shows you want to see.">
+  <meta property="og:url" content="https://foggy-labs.github.io/gallery/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Foggy Labs">
+  <meta property="og:image" content="https://foggy-labs.github.io/gallery/icon.png">
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gallery — NYC Art Exhibitions for iPhone">
+  <meta name="twitter:description" content="Discover NYC contemporary art exhibitions, track galleries you've visited, and save shows you want to see.">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Gallery",
+    "description": "Discover NYC contemporary art exhibitions, track galleries you've visited, and save shows you want to see. The Letterboxd for NYC art lovers.",
+    "url": "https://foggy-labs.github.io/gallery/",
+    "applicationCategory": "LifestyleApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "operatingSystem": "iOS"
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --terracotta: #C23B22;
+      --terracotta-dark: #A8321C;
+      --terracotta-light: #F5E8E4;
+      --terracotta-mid: #E8C4BA;
+      --ink: #1A1410;
+      --ink-soft: #3D2D25;
+      --warm-gray: #6B5E58;
+      --warm-gray-light: #9E918B;
+      --cream: #FAF6F3;
+      --white: #FFFFFF;
+      --divider: #EDE5E0;
+      --radius: 16px;
+      --radius-sm: 8px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+      color: var(--ink);
+      line-height: 1.6;
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ─── Header ─── */
+    header {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--divider);
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -0.3px;
+    }
+
+    .logo span { color: var(--terracotta); }
+
+    header nav a {
+      color: var(--warm-gray);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      margin-left: 20px;
+      transition: color 0.2s;
+    }
+
+    header nav a:hover { color: var(--terracotta); }
+
+    /* ─── Hero ─── */
+    .hero {
+      padding: 72px 0 64px;
+      background: var(--cream);
+      border-bottom: 1px solid var(--divider);
+    }
+
+    .hero-inner {
+      display: flex;
+      align-items: center;
+      gap: 56px;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .app-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 52px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--terracotta);
+    }
+
+    .hero-sub {
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--warm-gray);
+      max-width: 440px;
+      margin-bottom: 36px;
+    }
+
+    .cta-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--ink);
+      color: var(--white);
+      text-decoration: none;
+      padding: 14px 24px;
+      border-radius: var(--radius-sm);
+      font-size: 15px;
+      font-weight: 600;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-primary:hover {
+      background: var(--ink-soft);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .hero-badge {
+      font-size: 13px;
+      color: var(--warm-gray-light);
+    }
+
+    .hero-visual {
+      flex-shrink: 0;
+    }
+
+    .app-icon-hero {
+      width: 120px;
+      height: 120px;
+      border-radius: 26.7px; /* iOS icon radius */
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15), 0 4px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+      display: block;
+    }
+
+    .app-icon-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ─── Problem / Solution ─── */
+    .section {
+      padding: 72px 0;
+    }
+
+    .section-alt {
+      background: var(--cream);
+      border-top: 1px solid var(--divider);
+      border-bottom: 1px solid var(--divider);
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 12px;
+    }
+
+    .section h2 {
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 20px;
+      max-width: 560px;
+    }
+
+    .section-body {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--warm-gray);
+      max-width: 560px;
+    }
+
+    /* ─── Features ─── */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    .feature-card {
+      background: var(--white);
+      border: 1px solid var(--divider);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+    }
+
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .feature-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .feature-card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--warm-gray);
+    }
+
+    /* ─── How it works ─── */
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-top: 48px;
+      max-width: 560px;
+    }
+
+    .step {
+      display: flex;
+      gap: 24px;
+      position: relative;
+    }
+
+    .step:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 40px;
+      bottom: -8px;
+      width: 2px;
+      background: var(--divider);
+    }
+
+    .step-num {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--terracotta-light);
+      color: var(--terracotta-dark);
+      font-size: 15px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-content {
+      padding-top: 6px;
+      padding-bottom: 32px;
+    }
+
+    .step-content h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .step-content p {
+      font-size: 15px;
+      color: var(--warm-gray);
+      line-height: 1.6;
+    }
+
+    /* ─── Privacy callout ─── */
+    .privacy-callout {
+      background: var(--ink);
+      border-radius: var(--radius);
+      padding: 40px 40px;
+      color: var(--white);
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+    }
+
+    .privacy-callout .icon {
+      font-size: 36px;
+      flex-shrink: 0;
+    }
+
+    .privacy-callout h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .privacy-callout p {
+      font-size: 15px;
+      line-height: 1.65;
+      color: rgba(255,255,255,0.7);
+    }
+
+    /* ─── CTA Section ─── */
+    .cta-section {
+      text-align: center;
+      padding: 80px 0;
+      background: var(--terracotta-light);
+      border-top: 1px solid var(--terracotta-mid);
+    }
+
+    .cta-section h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+
+    .cta-section p {
+      font-size: 17px;
+      color: var(--warm-gray);
+      margin-bottom: 36px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-section .cta-row {
+      justify-content: center;
+    }
+
+    /* ─── Footer ─── */
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.55);
+      padding: 40px 0;
+    }
+
+    footer .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    footer .footer-logo {
+      font-size: 15px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.8);
+    }
+
+    footer nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 20px;
+    }
+
+    footer nav a {
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+
+    footer nav a:hover { color: rgba(255,255,255,0.9); }
+
+    footer .copyright {
+      width: 100%;
+      font-size: 12px;
+      color: rgba(255,255,255,0.3);
+      margin-top: 12px;
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 640px) {
+      .hero-inner {
+        flex-direction: column-reverse;
+        gap: 32px;
+        text-align: left;
+      }
+
+      .hero-visual {
+        align-self: flex-start;
+      }
+
+      .app-icon-hero {
+        width: 88px;
+        height: 88px;
+        border-radius: 20px;
+      }
+
+      .hero-sub {
+        font-size: 16px;
+      }
+
+      .privacy-callout {
+        flex-direction: column;
+        gap: 16px;
+        padding: 28px 24px;
+      }
+
+      footer .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a class="logo" href="https://foggy-labs.github.io">Foggy <span>Labs</span></a>
+      <nav>
+        <a href="https://foggy-labs.github.io/privacy/gallery/">Privacy</a>
+        <a href="https://foggy-labs.github.io/terms/gallery/">Terms</a>
+        <a href="https://foggy-labs.github.io/support/gallery/">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="app-eyebrow">🖼️ &nbsp;Coming soon to the App Store</div>
+          <h1>Your NYC art life,<br><em>beautifully tracked.</em></h1>
+          <p class="hero-sub">Discover exhibitions across Manhattan, Brooklyn, and beyond. Log galleries you've visited. Save shows before they close. Gallery is the Letterboxd for contemporary art.</p>
+          <div class="cta-row">
+            <a href="https://foggy-labs.github.io/support/gallery/" class="btn-primary">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a8 8 0 110 16A8 8 0 0110 2zm0 4a1 1 0 100 2 1 1 0 000-2zm.75 3.75h-1.5a.75.75 0 000 1.5h.75v2.25h-.75a.75.75 0 000 1.5h2.25a.75.75 0 000-1.5H11V10a.75.75 0 00-.75-.75h-.75V9.75h1.5z"/></svg>
+              Get notified at launch
+            </a>
+            <span class="hero-badge">Free · iPhone · iOS 17+</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <a class="app-icon-hero" href="#">
+            <img src="icon.png" alt="Gallery app icon" width="120" height="120">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">The Problem</div>
+      <h2>NYC has hundreds of galleries. You can't keep up.</h2>
+      <p class="section-body">You hear about an exhibition. You mean to go. Then you forget, or it closes, or you lose the name in a sea of Instagram stories and email newsletters. There's no great way to track what you've seen, what you want to see, or what's even on.</p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-label">Features</div>
+      <h2>Everything you need to live with art.</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🔍</span>
+          <h3>Explore Exhibitions</h3>
+          <p>Browse current and upcoming shows across NYC neighborhoods. Filter by medium, gallery, or area.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔖</span>
+          <h3>Save Shows</h3>
+          <p>Bookmark exhibitions before they close. Your saved list is always with you, even offline.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">✓</span>
+          <h3>Log Visits</h3>
+          <p>Mark galleries and exhibitions as visited. Build a personal record of everywhere you've been.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">👤</span>
+          <h3>Follow Galleries</h3>
+          <p>Follow your favorite galleries and artists. Never miss a new show from the spaces you love.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🗺️</span>
+          <h3>Gallery Profiles</h3>
+          <p>Detailed profiles for galleries across NYC — hours, neighborhood, current exhibitions, past shows.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🎨</span>
+          <h3>Artist Profiles</h3>
+          <p>Deep dives on artists, their work, and where their exhibitions are showing right now in the city.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">How it works</div>
+      <h2>Your art practice in three steps.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>Discover what's on</h3>
+            <p>Browse the Explore tab for exhibitions happening now across Manhattan, Brooklyn, and Queens. Filter by neighborhood or art type.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>Save it before it closes</h3>
+            <p>Tap the bookmark on any exhibition to save it. Your list lives on your device — private, always accessible, no account required.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Log your visits</h3>
+            <p>After you go, mark it as visited. Over time, Gallery becomes a living record of your relationship with NYC art.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy callout -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="privacy-callout">
+        <div class="icon">🔒</div>
+        <div>
+          <h3>Your data never leaves your device.</h3>
+          <p>All your exhibition saves, gallery visit logs, and follows are stored locally using Apple's SwiftData framework. We don't maintain a database of your curation activity. No account required. No cloud sync. No ads. Your art life stays yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">FAQ</div>
+      <h2>Common questions.</h2>
+      <div class="features-grid" style="margin-top: 36px;">
+        <div class="feature-card">
+          <h3>Is Gallery free?</h3>
+          <p>Yes, Gallery is completely free. No subscriptions, no in-app purchases. Just download and use.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Do I need an account?</h3>
+          <p>No. All your data is stored locally on your device. No sign-up, no email, no password.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Where does the exhibition data come from?</h3>
+          <p>Gallery sources exhibition data from curated NYC art databases. Always verify hours directly with the gallery before visiting.</p>
+        </div>
+        <div class="feature-card">
+          <h3>What iPhone do I need?</h3>
+          <p>Gallery requires iOS 17 or later. Works on all modern iPhones. iPad support coming soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Gallery is coming soon.</h2>
+      <p>Drop us a line and we'll let you know when it's available on the App Store.</p>
+      <div class="cta-row">
+        <a href="https://foggy-labs.github.io/support/gallery/" class="btn-primary">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path d="M3 4a2 2 0 012-2h10a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V4zm2 0v12h10V4H5zm2 2h6v2H7V6zm0 4h4v2H7v-2z"/></svg>
+          Contact us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <span class="footer-logo">Gallery by Foggy Labs</span>
+      <nav>
+        <a href="https://foggy-labs.github.io/privacy/gallery/">Privacy Policy</a>
+        <a href="https://foggy-labs.github.io/terms/gallery/">Terms of Service</a>
+        <a href="https://foggy-labs.github.io/support/gallery/">Support</a>
+        <a href="https://foggy-labs.github.io">Foggy Labs</a>
+      </nav>
+      <p class="copyright">© 2026 Fog Hill LLC (d/b/a Foggy Labs). All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

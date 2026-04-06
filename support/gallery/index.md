@@ -17,19 +17,13 @@ We typically respond within 24 hours.
 ## Frequently Asked Questions
 
 **How do I save an exhibition?**
-On any exhibition detail page, tap the bookmark icon to save it. Saved exhibitions appear in your Saved tab so you can easily come back to them. You can save up to 5 exhibitions on the free tier, or upgrade to Gallery Pro for unlimited saves.
+On any exhibition detail page, tap the bookmark icon to save it. Saved exhibitions appear in your Saved tab so you can easily come back to them.
 
 **How do I log a gallery visit?**
 After visiting a gallery, open the gallery's profile in the app and tap "Mark as Visited." You can add notes and a rating to remember your experience. All visit logs are stored locally on your device.
 
 **Where does the exhibition data come from?**
-Gallery sources exhibition listings, gallery profiles, and artist profiles from the Artsy API. Artsy is a leading online marketplace and resource for art, with comprehensive listings of galleries and exhibitions worldwide. Please verify exhibition dates and hours directly with the gallery before visiting, as listings may not always reflect real-time changes.
-
-**How do I manage my subscription?**
-Go to your iPhone Settings > [Your Name] > Subscriptions > Gallery. You can upgrade, downgrade, or cancel from there. You can also manage your subscription from the Settings tab within the app.
-
-**How do I restore my purchases?**
-Open Gallery > Settings > Restore Purchases. This will restore any active subscriptions associated with your Apple ID.
+Gallery sources exhibition listings, gallery profiles, and artist profiles from curated NYC art databases. Please verify exhibition dates and hours directly with the gallery before visiting, as listings may not always reflect real-time changes.
 
 **Is my data private?**
 Yes. All your exhibition saves, visit logs, and follows are stored locally on your device using Apple's SwiftData framework. This data is never uploaded to our servers or shared with any third party. See our [Privacy Policy](https://foggy-labs.github.io/privacy/gallery/) for full details.

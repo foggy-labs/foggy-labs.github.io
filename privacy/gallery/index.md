@@ -43,17 +43,15 @@ Gallery ("we," "us," or "our") operates the Gallery mobile application (the "App
 We use the information we collect to:
 
 - Provide, operate, and maintain the App and its features, including exhibition discovery, gallery profiles, and artist profiles
-- Fetch and display exhibition, gallery, and artist data from the Artsy API on your behalf
-- Process your subscriptions and manage premium features
 - Monitor and analyze usage trends and preferences to improve the App
 - Measure the effectiveness of our marketing campaigns and understand how users discover the App
 - Detect, prevent, and address technical issues, fraud, and abuse
-- Communicate with you about updates, support requests, and promotional offers related to the App (with your consent where required by law)
+- Communicate with you about updates and support requests related to the App (with your consent where required by law)
 - Comply with legal obligations
 
-## 3. Artsy API
+## 3. Exhibition Data
 
-Gallery uses the Artsy API (artsy.net) to fetch exhibition listings, gallery profiles, and artist profiles. When you browse content in the App, requests are made to Artsy's servers to retrieve this public exhibition data. Artsy's privacy policy governs the data it processes in connection with these requests. Artsy may log IP addresses and other metadata associated with API requests as part of standard web server operations. We do not transmit your personal saved data, follow lists, or visit logs to Artsy.
+Gallery surfaces exhibition listings, gallery profiles, and artist profiles. Exhibition and gallery data is displayed within the App for informational purposes. Your personal saved data, follow lists, and visit logs are stored locally on your device and are never transmitted to external data providers.
 
 ## 4. Local Data Storage
 
@@ -65,12 +63,10 @@ We use the following third-party services, each of which has its own privacy pol
 
 | Service | Purpose | Data Shared | Privacy Link |
 |---------|---------|-------------|--------------|
-| PostHog | Product analytics | Anonymous usage data, screen views, feature interactions, session data | [posthog.com/privacy](https://posthog.com/privacy) |
+| Mixpanel | Product analytics | Anonymous usage data, screen views, feature interactions, session data | [mixpanel.com/legal/privacy-policy](https://mixpanel.com/legal/privacy-policy/) |
 | Sentry | Crash reporting and error monitoring | Device info, crash logs, anonymized usage context | [sentry.io/privacy](https://sentry.io/privacy/) |
 | AppsFlyer | Install attribution and marketing analytics | Device identifiers (where permitted), install source, in-app conversion events | [appsflyer.com/privacy](https://www.appsflyer.com/privacy-policy/) |
 | Facebook SDK (Meta) | Advertising attribution and App Events | Install attribution data, anonymized conversion events | [facebook.com/privacy](https://www.facebook.com/privacy/explanation) |
-| RevenueCat | Subscription and purchase management | Anonymized user ID, subscription status, transaction identifiers | [revenuecat.com/privacy](https://www.revenuecat.com/privacy) |
-| Artsy API | Exhibition, gallery, and artist data | API request metadata (IP address, device info per standard web requests) | [artsy.net/privacy](https://www.artsy.net/privacy) |
 
 We do not sell your personal data to any third party. We do not upload or share your exhibition saves, visit logs, or follow lists with advertising networks or third-party services.
 
@@ -82,7 +78,7 @@ We retain your personal data for as long as the App is installed or as needed to
 
 - Exhibition saves, visit logs, and follow lists are stored on-device and never stored on our servers.
 - Art preference data is stored on-device only.
-- Analytics data is retained for up to 12 months.
+- Analytics data (Mixpanel) is retained for up to 12 months.
 - Crash and performance logs are retained for up to 90 days.
 - Communication records (support emails) are retained for up to 24 months.
 
