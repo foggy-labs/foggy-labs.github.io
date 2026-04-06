@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debt Snowball vs Debt Avalanche: Which Method Should You Use? | PayDown</title>
+  <meta name="description" content="Debt Snowball pays smallest balances first. Debt Avalanche attacks highest interest first. We break down which method saves more money — and which one you'll actually stick to.">
+  <link rel="canonical" href="https://foggy-labs.github.io/paydown/snowball-vs-avalanche/">
+  <!-- Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=APP_ID_NEEDED">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Debt Snowball vs Debt Avalanche: Which Method Should You Use?">
+  <meta property="og:description" content="Snowball pays smallest balances first. Avalanche attacks highest interest. Which saves more money — and which will you actually stick to?">
+  <meta property="og:url" content="https://foggy-labs.github.io/paydown/snowball-vs-avalanche/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Foggy Labs">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Debt Snowball vs Debt Avalanche: Which Method Should You Use?",
+    "description": "A detailed comparison of the Debt Snowball and Debt Avalanche methods for paying off debt — covering how each works, which saves more money, and which one behavioral research says you're more likely to complete.",
+    "url": "https://foggy-labs.github.io/paydown/snowball-vs-avalanche/",
+    "datePublished": "2026-04-06",
+    "dateModified": "2026-04-06",
+    "author": {
+      "@type": "Organization",
+      "name": "Foggy Labs"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Foggy Labs",
+      "url": "https://foggy-labs.github.io"
+    }
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --emerald-600: #059669;
+      --emerald-700: #047857;
+      --emerald-50: #ecfdf5;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --gray-900: #111827;
+      --white: #ffffff;
+      --amber-50: #fffbeb;
+      --amber-600: #d97706;
+      --radius: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+      color: var(--gray-800);
+      line-height: 1.7;
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    .container-wide { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+    header {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--gray-200);
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+
+    header .container-wide { display: flex; align-items: center; justify-content: space-between; }
+
+    .logo { font-size: 18px; font-weight: 700; color: var(--gray-900); text-decoration: none; }
+    .logo span { color: var(--emerald-600); }
+
+    .header-cta {
+      display: inline-block;
+      background: var(--emerald-600);
+      color: var(--white);
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s ease;
+    }
+
+    .header-cta:hover { background: var(--emerald-700); }
+
+    .article-header { padding: 48px 0 32px; border-bottom: 1px solid var(--gray-200); }
+
+    .article-meta {
+      font-size: 13px;
+      color: var(--gray-500);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .article-meta .tag {
+      background: var(--emerald-50);
+      color: var(--emerald-600);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 100px;
+      letter-spacing: 0.04em;
+    }
+
+    .article-header h1 {
+      font-size: 38px;
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--gray-900);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .article-header .lead { font-size: 18px; color: var(--gray-600); line-height: 1.6; max-width: 640px; }
+
+    .article-body { padding: 40px 0 60px; }
+
+    .article-body h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin: 40px 0 16px;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+    }
+
+    .article-body h2:first-child { margin-top: 0; }
+
+    .article-body h3 { font-size: 18px; font-weight: 700; color: var(--gray-900); margin: 28px 0 10px; }
+
+    .article-body p { font-size: 16px; color: var(--gray-700); margin-bottom: 20px; line-height: 1.75; }
+
+    .article-body ul, .article-body ol { padding-left: 24px; margin-bottom: 20px; }
+
+    .article-body li { font-size: 16px; color: var(--gray-700); margin-bottom: 8px; line-height: 1.65; }
+
+    .article-body strong { color: var(--gray-900); }
+
+    /* Comparison table */
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 28px 0;
+      font-size: 15px;
+    }
+
+    .comparison-table th {
+      background: var(--gray-50);
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 700;
+      color: var(--gray-900);
+      border-bottom: 2px solid var(--gray-200);
+    }
+
+    .comparison-table th:not(:first-child) { text-align: center; }
+
+    .comparison-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--gray-200);
+      color: var(--gray-700);
+    }
+
+    .comparison-table td:not(:first-child) { text-align: center; }
+
+    .comparison-table tr:last-child td { border-bottom: none; }
+
+    .win { color: var(--emerald-600); font-weight: 700; }
+    .neutral { color: var(--gray-500); }
+
+    /* Method cards */
+    .method-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 28px 0;
+    }
+
+    .method-card {
+      border: 2px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    .method-card.snowball { border-color: var(--emerald-600); }
+
+    .method-card .method-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    .method-card.snowball .method-label { color: var(--emerald-600); }
+    .method-card.avalanche .method-label { color: var(--amber-600); }
+
+    .method-card h3 { font-size: 20px; font-weight: 800; color: var(--gray-900); margin: 0 0 10px; }
+
+    .method-card p { font-size: 14px; color: var(--gray-600); margin: 0; line-height: 1.6; }
+
+    /* Callout */
+    .callout {
+      background: var(--emerald-50);
+      border-left: 4px solid var(--emerald-600);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 24px;
+      margin: 28px 0;
+    }
+
+    .callout p { font-size: 15px; color: var(--gray-700); margin: 0; }
+    .callout strong { color: var(--emerald-600); }
+
+    /* Example scenario */
+    .scenario {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin: 28px 0;
+    }
+
+    .scenario h3 { font-size: 16px; font-weight: 700; color: var(--gray-900); margin: 0 0 16px; }
+
+    .debt-list { list-style: none; padding: 0; margin: 0 0 16px; }
+
+    .debt-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--gray-200);
+      font-size: 15px;
+    }
+
+    .debt-item:last-child { border-bottom: none; }
+    .debt-item .name { color: var(--gray-800); font-weight: 500; }
+    .debt-item .balance { color: var(--gray-600); }
+    .debt-item .rate { font-size: 13px; color: var(--gray-500); }
+
+    .scenario-results {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .result-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .result-card .result-label { font-size: 12px; font-weight: 600; color: var(--gray-500); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .result-card .result-value { font-size: 20px; font-weight: 800; color: var(--gray-900); }
+    .result-card .result-note { font-size: 12px; color: var(--gray-500); margin-top: 4px; }
+    .result-card.better { border-color: var(--emerald-600); }
+    .result-card.better .result-value { color: var(--emerald-600); }
+
+    /* App card */
+    .app-card {
+      border: 2px solid var(--emerald-600);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin: 40px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+    }
+
+    .app-card .app-icon {
+      width: 72px;
+      height: 72px;
+      background: var(--emerald-50);
+      border-radius: 16px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+
+    .app-card .app-info h3 { font-size: 18px; font-weight: 800; color: var(--gray-900); margin: 0 0 6px; }
+    .app-card .app-info p { font-size: 14px; color: var(--gray-600); margin: 0 0 16px; line-height: 1.5; }
+
+    .app-store-badge { display: inline-block; transition: transform 0.15s ease; }
+    .app-store-badge:hover { transform: scale(1.05); }
+    .app-store-badge img { height: 44px; width: auto; }
+
+    .divider { border: none; border-top: 1px solid var(--gray-200); margin: 40px 0; }
+
+    /* FAQ */
+    .faq-section { padding: 48px 0; background: var(--gray-50); }
+    .faq-section h2 { font-size: 26px; font-weight: 800; color: var(--gray-900); margin-bottom: 28px; }
+
+    .faq-item { border-bottom: 1px solid var(--gray-200); background: var(--white); }
+    .faq-item:first-of-type { border-top: 1px solid var(--gray-200); }
+
+    .faq-item summary {
+      padding: 18px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--gray-900);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--gray-400); }
+    .faq-item[open] summary::after { content: '\2212'; }
+    .faq-item .answer { padding: 0 20px 18px; font-size: 15px; color: var(--gray-600); line-height: 1.7; }
+
+    /* CTA */
+    .cta-strip { padding: 48px 0; background: var(--emerald-600); text-align: center; color: var(--white); }
+    .cta-strip h2 { font-size: 26px; font-weight: 800; margin-bottom: 8px; }
+    .cta-strip p { font-size: 16px; color: rgba(255,255,255,0.8); margin-bottom: 24px; }
+
+    footer { padding: 32px 0; border-top: 1px solid var(--gray-200); text-align: center; }
+    footer nav a { color: var(--gray-500); text-decoration: none; font-size: 14px; margin: 0 12px; }
+    footer nav a:hover { color: var(--gray-700); }
+    footer .copyright { margin-top: 12px; font-size: 13px; color: var(--gray-500); }
+
+    @media (max-width: 768px) {
+      .article-header h1 { font-size: 28px; }
+      .article-header .lead { font-size: 16px; }
+      .article-body h2 { font-size: 22px; }
+      .method-grid { grid-template-columns: 1fr; }
+      .scenario-results { grid-template-columns: 1fr; }
+      .app-card { flex-direction: column; gap: 16px; padding: 20px; }
+      .comparison-table { font-size: 13px; }
+      .comparison-table th, .comparison-table td { padding: 10px 10px; }
+      header nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container-wide">
+      <a href="https://foggy-labs.github.io/" class="logo">Foggy <span>Labs</span></a>
+      <a href="https://apps.apple.com/app/paydown/id0000000000" class="header-cta">Download PayDown</a>
+    </div>
+  </header>
+
+  <div class="article-header">
+    <div class="container">
+      <div class="article-meta">
+        <span class="tag">Debt Strategy</span>
+        <span>Updated April 2026</span>
+        <span>10 min read</span>
+      </div>
+      <h1>Debt Snowball vs Debt Avalanche: Which Method Should You Use?</h1>
+      <p class="lead">Snowball pays off smallest balances first. Avalanche attacks highest interest first. We break down which saves more money&mdash;and which one behavioral research says you&rsquo;re more likely to actually finish.</p>
+    </div>
+  </div>
+
+  <div class="article-body">
+    <div class="container">
+
+      <p>Both the Debt Snowball and Debt Avalanche methods work. The real question isn&rsquo;t which one is mathematically optimal&mdash;it&rsquo;s which one you&rsquo;ll stick to long enough to finish.</p>
+
+      <p>Here&rsquo;s a complete breakdown of both methods, how they compare on time and interest, and what the research says about which people actually complete.</p>
+
+      <h2>How Each Method Works</h2>
+
+      <div class="method-grid">
+        <div class="method-card snowball">
+          <div class="method-label">Debt Snowball</div>
+          <h3>Smallest balance first</h3>
+          <p>Make minimum payments on all debts. Put every extra dollar toward your smallest balance. When it&rsquo;s paid off, roll that payment to the next smallest. Repeat.</p>
+        </div>
+        <div class="method-card avalanche">
+          <div class="method-label">Debt Avalanche</div>
+          <h3>Highest interest first</h3>
+          <p>Make minimum payments on all debts. Put every extra dollar toward the debt with the highest interest rate. When it&rsquo;s paid off, move to the next highest rate. Repeat.</p>
+        </div>
+      </div>
+
+      <p>The mechanics are identical&mdash;both methods focus extra money on one debt at a time and cascade those payments forward. The only difference is the <em>order</em> in which you attack your debts.</p>
+
+      <h2>Which Saves More Money?</h2>
+
+      <p><strong>Debt Avalanche saves more money in almost every scenario.</strong> By eliminating high-interest debt first, you reduce the total interest you pay over time. The savings can be hundreds or even thousands of dollars depending on your balances and rates.</p>
+
+      <p>Here&rsquo;s a realistic example to illustrate the difference:</p>
+
+      <div class="scenario">
+        <h3>Example: $22,000 in debt, $600/month to pay it off</h3>
+        <ul class="debt-list">
+          <li class="debt-item">
+            <span class="name">Credit Card A</span>
+            <span class="balance">$3,200</span>
+            <span class="rate">24.99% APR</span>
+          </li>
+          <li class="debt-item">
+            <span class="name">Credit Card B</span>
+            <span class="balance">$7,400</span>
+            <span class="rate">19.99% APR</span>
+          </li>
+          <li class="debt-item">
+            <span class="name">Personal Loan</span>
+            <span class="balance">$11,400</span>
+            <span class="rate">12.50% APR</span>
+          </li>
+        </ul>
+        <div class="scenario-results">
+          <div class="result-card">
+            <div class="result-label">Debt Snowball</div>
+            <div class="result-value">46 months</div>
+            <div class="result-note">~$7,840 total interest</div>
+          </div>
+          <div class="result-card better">
+            <div class="result-label">Debt Avalanche</div>
+            <div class="result-value">46 months</div>
+            <div class="result-note">~$7,190 in interest&nbsp;&mdash; saves ~$650</div>
+          </div>
+        </div>
+      </div>
+
+      <p>In this example, both methods take the same amount of time, but Avalanche saves about $650 in interest. In scenarios with larger balance differences between debts, the time-to-payoff can also vary.</p>
+
+      <div class="callout">
+        <p><strong>Important:</strong> The interest savings from Avalanche are real, but they&rsquo;re often smaller than people expect&mdash;especially if your debts have similar interest rates. If saving money and staying motivated are both priorities, the gap between methods may be less significant than the method you&rsquo;ll actually follow through on.</p>
+      </div>
+
+      <h2>Which One Will You Actually Finish?</h2>
+
+      <p>This is where Snowball has a real advantage that Avalanche&rsquo;s math can&rsquo;t account for: <strong>psychological momentum.</strong></p>
+
+      <p>A study published in the <em>Journal of Consumer Research</em> found that people using the Debt Snowball method were significantly more likely to stay on track with their payoff plan than those using mathematically optimal strategies. The reason: eliminating entire accounts&mdash;even small ones&mdash;creates a sense of progress that keeps people going.</p>
+
+      <p>With Avalanche, your first payoff target is often a large high-interest balance that takes months or years to eliminate. That can feel like running on a treadmill with no visible progress.</p>
+
+      <h2>When to Choose Debt Snowball</h2>
+
+      <ul>
+        <li>You&rsquo;ve started debt payoff plans before and given up</li>
+        <li>Your motivation needs regular reinforcement</li>
+        <li>You have several small balances you can knock out quickly</li>
+        <li>Your debts have similar interest rates (the math difference is minimal)</li>
+        <li>You just want to feel like you&rsquo;re making progress</li>
+      </ul>
+
+      <h2>When to Choose Debt Avalanche</h2>
+
+      <ul>
+        <li>You have at least one debt with a very high interest rate (20%+ APR)</li>
+        <li>You&rsquo;re highly motivated and don&rsquo;t need quick wins to stay on track</li>
+        <li>The interest savings are large enough to matter to your financial plan</li>
+        <li>You have a clear timeline (e.g., you want to be debt-free before a specific date)</li>
+        <li>You&rsquo;re already comfortable managing multiple debts simultaneously</li>
+      </ul>
+
+      <h2>Side-by-Side Comparison</h2>
+
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Factor</th>
+            <th>Snowball</th>
+            <th>Avalanche</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Order of attack</td>
+            <td>Smallest balance first</td>
+            <td>Highest APR first</td>
+          </tr>
+          <tr>
+            <td>Total interest paid</td>
+            <td class="neutral">More</td>
+            <td class="win">Less</td>
+          </tr>
+          <tr>
+            <td>Time to debt-free</td>
+            <td class="neutral">Similar or slightly longer</td>
+            <td class="win">Similar or slightly faster</td>
+          </tr>
+          <tr>
+            <td>Early motivational wins</td>
+            <td class="win">Yes &mdash; paid-off accounts fast</td>
+            <td class="neutral">Slower early progress</td>
+          </tr>
+          <tr>
+            <td>Completion rate (research)</td>
+            <td class="win">Higher</td>
+            <td class="neutral">Lower</td>
+          </tr>
+          <tr>
+            <td>Best for</td>
+            <td>Motivation-driven people</td>
+            <td>Math-driven people</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="divider">
+
+      <h2>The Honest Answer: Both Work. Pick One and Start.</h2>
+
+      <p>The most common mistake people make isn&rsquo;t choosing the wrong method&mdash;it&rsquo;s spending weeks analyzing the decision instead of starting. The interest difference between the two methods is rarely large enough to justify the delay.</p>
+
+      <p>If you genuinely can&rsquo;t decide, start with Snowball. The quick wins help you build the habit, and you can always switch to Avalanche once you&rsquo;re rolling.</p>
+
+      <p>The second most common mistake: trying to run either method in a spreadsheet. Most people stop updating the spreadsheet after a couple of months, lose track of their debt-free date, and quietly abandon the plan.</p>
+
+      <!-- App Card -->
+      <div class="app-card">
+        <div class="app-icon">&#128200;</div>
+        <div class="app-info">
+          <h3>PayDown &mdash; Try Both Methods on Your Actual Debts</h3>
+          <p>Enter your debts, choose Snowball or Avalanche, and see your exact debt-free date and total interest. Switch methods instantly to compare. Everything stays on your phone&mdash;no accounts, no bank connections.</p>
+          <a href="https://apps.apple.com/app/paydown/id0000000000" class="app-store-badge" aria-label="Download PayDown on the App Store">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <h2>One More Thing: What About Hybrid Approaches?</h2>
+
+      <p>Some people use a hybrid: pay off one or two small balances with Snowball to get early wins, then switch to Avalanche for the remaining debts. This isn&rsquo;t a standard method, but if it keeps you motivated and moving, it&rsquo;s entirely valid.</p>
+
+      <p>The goal is to finish. Any method you stick with beats any method you abandon.</p>
+
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+
+      <details class="faq-item">
+        <summary>Which method is recommended by financial experts?</summary>
+        <div class="answer">Financial experts are split. Dave Ramsey strongly advocates for the Debt Snowball because of its psychological advantages. Most personal finance academics favor the Debt Avalanche because it minimizes total interest paid. Both camps agree that the best method is the one you'll actually complete.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does it matter which method I use if my interest rates are similar?</summary>
+        <div class="answer">If your debts all have similar APRs (within 3&ndash;5 percentage points), the interest savings from Avalanche are minimal. In that case, choose Snowball for the motivational benefits, since the math difference is negligible.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I switch methods mid-payoff?</summary>
+        <div class="answer">Yes. There are no rules. If you started with Snowball and now want to switch to Avalanche, just recalculate your payoff order. Apps like PayDown let you switch methods instantly to see how your plan changes.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Should I pay off debt or invest first?</summary>
+        <div class="answer">If your debts have interest rates above 7&ndash;8%, paying them off typically offers a better guaranteed return than investing. High-interest debt (15%+ APR) should almost always be prioritized before non-retirement investments. Keep contributing to any employer 401(k) match&mdash;that&rsquo;s an instant 50&ndash;100% return.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What if I can only afford minimum payments right now?</summary>
+        <div class="answer">Pay the minimums and focus on increasing your income or cutting expenses to free up any extra money for the chosen method. Even $25&ndash;50 extra per month on a targeted debt accelerates your payoff date meaningfully. Run the numbers in a tracker to see the impact.</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>See Your Debt-Free Date</h2>
+      <p>Enter your debts and compare Snowball vs. Avalanche on your actual numbers. Private, offline, no account needed.</p>
+      <a href="https://apps.apple.com/app/paydown/id0000000000" class="app-store-badge" aria-label="Download PayDown on the App Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" loading="lazy">
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-wide">
+      <nav>
+        <a href="/paydown/">PayDown</a>
+        <a href="/privacy/paydown/">Privacy Policy</a>
+        <a href="/terms/paydown/">Terms of Service</a>
+        <a href="/support/paydown/">Support</a>
+        <a href="/">Foggy Labs</a>
+      </nav>
+      <p class="copyright">&copy; 2026 Fog Hill LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

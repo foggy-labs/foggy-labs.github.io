@@ -3,3 +3,11 @@ description: Independent iOS app studio
 theme: minima
 baseurl: ""
 url: "https://foggy-labs.github.io"
+
+plugins:
+  - jekyll-sitemap
+
+# Exclude build artifacts from sitemap
+exclude:
+  - README.md
+  - _templates/
