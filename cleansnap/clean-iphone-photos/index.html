@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Clean Up Your iPhone Photo Library | CleanSnap</title>
+  <meta name="description" content="Step-by-step guide to cleaning up your iPhone photo library — delete duplicates, screenshots, and blurry photos without uploading anything to the cloud.">
+  <link rel="canonical" href="https://foggy-labs.github.io/cleansnap/clean-iphone-photos/">
+  <!-- Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=6753981627">
+  <!-- Open Graph -->
+  <meta property="og:title" content="How to Clean Up Your iPhone Photo Library">
+  <meta property="og:description" content="Delete duplicates, screenshots, and blurry photos — without uploading your photos anywhere. A complete guide for iPhone users.">
+  <meta property="og:url" content="https://foggy-labs.github.io/cleansnap/clean-iphone-photos/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Foggy Labs">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Clean Up Your iPhone Photo Library",
+    "description": "A complete guide to cleaning up clutter, duplicates, screenshots, and blurry photos from your iPhone photo library — using built-in iOS tools and on-device AI.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Delete Duplicate Photos",
+        "text": "Open Photos app, scroll to Albums > Utilities > Duplicates. Tap Merge to combine duplicates and keep the highest quality version."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Delete Screenshots in Bulk",
+        "text": "Open Albums > Media Types > Screenshots. Tap Select, then select all and delete."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Remove Blurry and Low-Quality Photos",
+        "text": "Sort your library by date or use an AI photo cleaner to automatically detect and flag blurry, dark, or low-quality shots for deletion."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Free Up Storage with AI Cleanup",
+        "text": "Use an on-device AI photo cleaner like CleanSnap to scan your library for clutter, duplicates, and enhancement opportunities without uploading your photos anywhere."
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue-600: #2563eb;
+      --blue-700: #1d4ed8;
+      --blue-50: #eff6ff;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --gray-900: #111827;
+      --white: #ffffff;
+      --green-600: #059669;
+      --radius: 12px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+      color: var(--gray-800);
+      line-height: 1.7;
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .container-wide {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--gray-200);
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+
+    header .container-wide {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gray-900);
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--blue-600); }
+
+    .header-cta {
+      display: inline-block;
+      background: var(--blue-600);
+      color: var(--white);
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s ease;
+    }
+
+    .header-cta:hover { background: var(--blue-700); }
+
+    /* Article header */
+    .article-header {
+      padding: 48px 0 32px;
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .article-meta {
+      font-size: 13px;
+      color: var(--gray-500);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .article-meta .tag {
+      background: var(--blue-50);
+      color: var(--blue-600);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 100px;
+      letter-spacing: 0.04em;
+    }
+
+    .article-header h1 {
+      font-size: 38px;
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--gray-900);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .article-header .lead {
+      font-size: 18px;
+      color: var(--gray-600);
+      line-height: 1.6;
+      max-width: 640px;
+    }
+
+    /* Article body */
+    .article-body {
+      padding: 40px 0 60px;
+    }
+
+    .article-body h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin: 40px 0 16px;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+    }
+
+    .article-body h2:first-child { margin-top: 0; }
+
+    .article-body h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin: 28px 0 10px;
+    }
+
+    .article-body p {
+      font-size: 16px;
+      color: var(--gray-700);
+      margin-bottom: 20px;
+      line-height: 1.75;
+    }
+
+    .article-body ul, .article-body ol {
+      padding-left: 24px;
+      margin-bottom: 20px;
+    }
+
+    .article-body li {
+      font-size: 16px;
+      color: var(--gray-700);
+      margin-bottom: 8px;
+      line-height: 1.65;
+    }
+
+    .article-body strong { color: var(--gray-900); }
+
+    /* Step boxes */
+    .step-box {
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin: 24px 0;
+      background: var(--gray-50);
+    }
+
+    .step-box .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--blue-600);
+      color: var(--white);
+      border-radius: 50%;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .step-box h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin: 0 0 10px;
+    }
+
+    .step-box p {
+      font-size: 15px;
+      color: var(--gray-600);
+      margin: 0;
+      line-height: 1.65;
+    }
+
+    /* Callout / tip box */
+    .callout {
+      background: var(--blue-50);
+      border-left: 4px solid var(--blue-600);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 24px;
+      margin: 28px 0;
+    }
+
+    .callout p {
+      font-size: 15px;
+      color: var(--gray-700);
+      margin: 0;
+    }
+
+    .callout strong { color: var(--blue-600); }
+
+    /* Warning box */
+    .warning {
+      background: #fffbeb;
+      border-left: 4px solid #d97706;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 18px 24px;
+      margin: 28px 0;
+    }
+
+    .warning p {
+      font-size: 15px;
+      color: var(--gray-700);
+      margin: 0;
+    }
+
+    /* App promo card */
+    .app-card {
+      border: 2px solid var(--blue-600);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin: 40px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      background: var(--white);
+    }
+
+    .app-card .app-icon {
+      width: 72px;
+      height: 72px;
+      background: var(--blue-50);
+      border-radius: 16px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+
+    .app-card .app-info h3 {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin: 0 0 6px;
+    }
+
+    .app-card .app-info p {
+      font-size: 14px;
+      color: var(--gray-600);
+      margin: 0 0 16px;
+      line-height: 1.5;
+    }
+
+    .app-store-badge {
+      display: inline-block;
+      transition: transform 0.15s ease;
+    }
+
+    .app-store-badge:hover { transform: scale(1.05); }
+
+    .app-store-badge img { height: 44px; width: auto; }
+
+    /* Divider */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--gray-200);
+      margin: 40px 0;
+    }
+
+    /* FAQ section */
+    .faq-section {
+      padding: 48px 0;
+      background: var(--gray-50);
+    }
+
+    .faq-section h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--gray-900);
+      margin-bottom: 28px;
+      letter-spacing: -0.01em;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--gray-200);
+      background: var(--white);
+    }
+
+    .faq-item:first-of-type { border-top: 1px solid var(--gray-200); }
+
+    .faq-item summary {
+      padding: 18px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--gray-900);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-item summary::-webkit-details-marker { display: none; }
+
+    .faq-item summary::after {
+      content: '+';
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--gray-400);
+    }
+
+    .faq-item[open] summary::after { content: '\2212'; }
+
+    .faq-item .answer {
+      padding: 0 20px 18px;
+      font-size: 15px;
+      color: var(--gray-600);
+      line-height: 1.7;
+    }
+
+    /* CTA strip */
+    .cta-strip {
+      padding: 48px 0;
+      background: var(--blue-600);
+      text-align: center;
+      color: var(--white);
+    }
+
+    .cta-strip h2 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .cta-strip p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 24px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 32px 0;
+      border-top: 1px solid var(--gray-200);
+      text-align: center;
+    }
+
+    footer nav a {
+      color: var(--gray-500);
+      text-decoration: none;
+      font-size: 14px;
+      margin: 0 12px;
+    }
+
+    footer nav a:hover { color: var(--gray-700); }
+
+    footer .copyright {
+      margin-top: 12px;
+      font-size: 13px;
+      color: var(--gray-500);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .article-header h1 { font-size: 28px; }
+      .article-header .lead { font-size: 16px; }
+      .article-body h2 { font-size: 22px; }
+      .app-card { flex-direction: column; gap: 16px; padding: 20px; }
+      header nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container-wide">
+      <a href="https://foggy-labs.github.io/" class="logo">Foggy <span>Labs</span></a>
+      <a href="https://apps.apple.com/app/cleansnap/id6753981627" class="header-cta">Download CleanSnap</a>
+    </div>
+  </header>
+
+  <!-- Article Header -->
+  <div class="article-header">
+    <div class="container">
+      <div class="article-meta">
+        <span class="tag">iPhone Guide</span>
+        <span>Updated April 2026</span>
+        <span>8 min read</span>
+      </div>
+      <h1>How to Clean Up Your iPhone Photo Library</h1>
+      <p class="lead">A step-by-step guide to deleting duplicates, screenshots, and blurry photos from your iPhone&mdash;without uploading anything to the cloud.</p>
+    </div>
+  </div>
+
+  <!-- Article Body -->
+  <div class="article-body">
+    <div class="container">
+
+      <p>If your iPhone is constantly warning you about storage, your photo library is probably the biggest culprit. The average iPhone user has thousands of photos: screenshots of receipts, blurry shots from a moving car, seven nearly identical photos from that one night out. It adds up fast.</p>
+
+      <p>The good news: cleaning it up is straightforward. This guide covers four methods, from the built-in iOS tools to AI-powered cleanup that finds clutter you&rsquo;d never manually track down.</p>
+
+      <div class="callout">
+        <p><strong>Before you start:</strong> Make sure your iPhone is backed up to iCloud or your computer. Deleted photos go to the &ldquo;Recently Deleted&rdquo; album and stay there for 30 days before permanent removal&mdash;but it&rsquo;s always good to have a backup.</p>
+      </div>
+
+      <h2>Method 1: Delete Duplicate Photos with iOS</h2>
+
+      <p>Since iOS 16, the Photos app has a built-in Duplicates detector. It scans your library and groups exact or near-exact copies together so you can merge them.</p>
+
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <h3>Open Photos and find the Duplicates album</h3>
+        <p>Open the <strong>Photos</strong> app and tap <strong>Albums</strong> at the bottom. Scroll down to <strong>Utilities</strong>. If you have duplicates, you&rsquo;ll see a <strong>Duplicates</strong> album here.</p>
+      </div>
+
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <h3>Review and merge</h3>
+        <p>Tap into any duplicate group and tap <strong>Merge</strong>. iOS keeps the highest-quality version and combines any metadata (location, date, edits) from both copies. The lower-quality copy moves to Recently Deleted.</p>
+      </div>
+
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <h3>Merge all at once</h3>
+        <p>At the top of the Duplicates album, tap <strong>Select</strong> then <strong>Select All</strong>, then tap <strong>Merge</strong>. This handles everything in one pass.</p>
+      </div>
+
+      <div class="warning">
+        <p><strong>Limitation:</strong> iOS only catches exact or near-exact duplicates. It won&rsquo;t find the five slightly different shots of the same sunset, or the screenshot you saved twice from different conversations. For that, you need AI-powered scanning.</p>
+      </div>
+
+      <h2>Method 2: Delete Screenshots in Bulk</h2>
+
+      <p>Screenshots are usually the fastest way to reclaim storage. Most people never delete them and they pile up for years. iOS makes bulk deletion easy.</p>
+
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <h3>Go to Albums &gt; Media Types &gt; Screenshots</h3>
+        <p>In the <strong>Photos</strong> app, tap <strong>Albums</strong> then scroll down to <strong>Media Types</strong>. Tap <strong>Screenshots</strong> to see all of them in one place.</p>
+      </div>
+
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <h3>Select and delete</h3>
+        <p>Tap <strong>Select</strong> in the top right. To select all, tap the first screenshot then <strong>swipe across rows</strong> instead of tapping each one individually. Then tap the trash icon.</p>
+      </div>
+
+      <div class="callout">
+        <p><strong>Tip:</strong> You can do the same for <strong>Screen Recordings</strong>, <strong>Bursts</strong>, and <strong>Live Photos</strong> from the Media Types section. Bursts especially can consume huge amounts of storage.</p>
+      </div>
+
+      <h2>Method 3: Review by Month and Delete in Batches</h2>
+
+      <p>For general photo clutter (the blurry shots, the accidental photos, the 12 nearly identical group photos), reviewing by time period is the most manageable approach.</p>
+
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <h3>Switch to Months view</h3>
+        <p>In the <strong>Photos</strong> app, tap the back arrow from All Photos until you reach the <strong>Months</strong> view. You&rsquo;ll see your photos organized by month as a grid of thumbnails.</p>
+      </div>
+
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <h3>Tap Select and swipe to select entire rows</h3>
+        <p>Tap <strong>Select</strong>, then <strong>swipe horizontally across rows</strong> you want to delete. This is far faster than tapping photos one by one.</p>
+      </div>
+
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <h3>Work backward from oldest months</h3>
+        <p>Start from the oldest months where you&rsquo;re least likely to want every photo. You&rsquo;ll make faster decisions on old content than recent shots.</p>
+      </div>
+
+      <hr class="divider">
+
+      <h2>Method 4: Use On-Device AI to Find Clutter Automatically</h2>
+
+      <p>The methods above work well for what iOS can detect or what you can manually identify. But there&rsquo;s a whole category of clutter that&rsquo;s easy to miss: blurry photos mixed in with sharp ones, screenshots that don&rsquo;t show up in the Screenshots album because they were saved differently, dark or low-quality shots that aren&rsquo;t obviously bad at thumbnail size.</p>
+
+      <p>AI-powered photo cleaners can find this automatically. The key distinction: some apps require uploading your photos to their cloud to analyze them. If you&rsquo;re concerned about privacy, look for one that runs entirely on your device.</p>
+
+      <!-- App Card -->
+      <div class="app-card">
+        <div class="app-icon">&#128465;</div>
+        <div class="app-info">
+          <h3>CleanSnap &mdash; On-Device AI Photo Cleaner</h3>
+          <p>CleanSnap uses Apple&rsquo;s Vision and Core Image frameworks to scan your library for clutter, duplicates, and blurry shots. All processing happens on your iPhone. Your photos are never uploaded anywhere.</p>
+          <a href="https://apps.apple.com/app/cleansnap/id6753981627" class="app-store-badge" aria-label="Download CleanSnap on the App Store">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <h3>Why on-device AI matters</h3>
+
+      <p>Most photo cleanup apps work by uploading your images to a server, running analysis in the cloud, then returning results. That means your personal photos &mdash; including photos of your family, your home, your documents &mdash; are transmitted to a third party and stored on their infrastructure.</p>
+
+      <p>On-device AI eliminates this entirely. Apple&rsquo;s Neural Engine can run the same machine learning models locally, so analysis results are the same quality without any data leaving your phone.</p>
+
+      <h3>What AI photo cleanup catches that manual review misses</h3>
+
+      <ul>
+        <li><strong>Blurry photos mixed with sharp ones</strong> &mdash; Thumbnails often hide blur. AI can detect focus quality at scale.</li>
+        <li><strong>Similar (not identical) duplicates</strong> &mdash; iOS catches exact duplicates. AI can catch five near-identical shots of the same scene where one is clearly the best.</li>
+        <li><strong>Dark or underexposed photos</strong> &mdash; Consistently underexposed shots that aren&rsquo;t visually obvious in a grid view.</li>
+        <li><strong>Screenshots missed by the Screenshots album</strong> &mdash; Saved images from browsers, messages, and apps don&rsquo;t always end up in the Screenshots album.</li>
+      </ul>
+
+      <hr class="divider">
+
+      <h2>How Much Storage Can You Expect to Recover?</h2>
+
+      <p>It varies widely based on how long you&rsquo;ve had your phone and your habits, but here are typical ranges based on user reports:</p>
+
+      <ul>
+        <li><strong>Screenshots:</strong> 500MB&ndash;3GB on a phone with a few years of use</li>
+        <li><strong>Duplicate photos:</strong> 1&ndash;5GB for heavy iCloud Photo Library users</li>
+        <li><strong>Blurry and low-quality photos:</strong> Varies, often 10&ndash;20% of total library size</li>
+        <li><strong>Bursts:</strong> 100&ndash;500MB (each burst can be 30&ndash;90 frames)</li>
+      </ul>
+
+      <p>Combined, users typically free up 3&ndash;10GB from a thorough cleanup. On a 64GB iPhone running low on storage, that&rsquo;s significant.</p>
+
+      <h2>After You Clean Up: Staying Organized</h2>
+
+      <p>Cleaning your photo library is easier to maintain than you might think. A few habits prevent the pile-up from returning:</p>
+
+      <ul>
+        <li><strong>Delete bursts immediately.</strong> After you take a burst, tap to select your favorite and delete the rest right away. It takes 10 seconds and saves hours of cleanup later.</li>
+        <li><strong>Do a monthly screenshot purge.</strong> Set a recurring reminder to clear your Screenshots album. Most screenshots are one-time reference images you never need again.</li>
+        <li><strong>Review before uploading to iCloud.</strong> Cleaning your library before enabling or expanding iCloud Photos saves storage space (and money) on your iCloud plan.</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+
+      <details class="faq-item">
+        <summary>Will deleted photos be gone immediately?</summary>
+        <div class="answer">No. Deleted photos move to the Recently Deleted album and stay there for 30 days. To permanently free up storage right away, open Albums &gt; Recently Deleted, tap Select &gt; Select All &gt; Delete All. This clears them immediately.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I clean up iCloud Photos, or just photos on my device?</summary>
+        <div class="answer">If you use iCloud Photos, deletions sync across all your devices. Deleting a photo on your iPhone removes it from iCloud and all other Apple devices signed into the same Apple ID. Make sure you actually want a photo gone before deleting it.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Why do I still get storage warnings after deleting photos?</summary>
+        <div class="answer">Two common reasons: (1) Deleted photos are still in the Recently Deleted album, counting toward your storage until permanently removed. (2) iCloud Photo Library storage is separate from on-device storage. Check Settings &gt; [Your Name] &gt; iCloud &gt; Photos to see your iCloud usage.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is it safe to use an AI photo cleaner?</summary>
+        <div class="answer">It depends on the app. Apps that upload your photos to process them require trust in their privacy practices. Apps that run on-device, like CleanSnap, never transmit your photos anywhere. If privacy is a concern, look for apps that explicitly state all processing is on-device.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What iOS version do I need for the built-in Duplicates feature?</summary>
+        <div class="answer">The Duplicates album requires iOS 16 or later on iPhone, and iPadOS 16.1 or later on iPad. If you don&rsquo;t see it in Albums &gt; Utilities, update your iOS version or your library may not have detected any duplicates yet.</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Ready to Clean Up Your Photos?</h2>
+      <p>CleanSnap finds clutter automatically &mdash; on your device, never in the cloud.</p>
+      <a href="https://apps.apple.com/app/cleansnap/id6753981627" class="app-store-badge" aria-label="Download CleanSnap on the App Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" loading="lazy">
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container-wide">
+      <nav>
+        <a href="/cleansnap/">CleanSnap</a>
+        <a href="/privacy/cleansnap/">Privacy Policy</a>
+        <a href="/terms/cleansnap/">Terms of Service</a>
+        <a href="/support/cleansnap/">Support</a>
+        <a href="/">Foggy Labs</a>
+      </nav>
+      <p class="copyright">&copy; 2026 Fog Hill LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
