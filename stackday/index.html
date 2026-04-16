@@ -36,6 +36,16 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
+      --stack-primary: #F5A623;
+      --stack-secondary: #4A90E2;
+      --stack-success: #34C759;
+      --stack-bg: #f6f6f2;
+      --stack-surface: #ffffff;
+      --stack-surface-soft: #f9f7f2;
+      --stack-ink: #121212;
+      --stack-subtext: #6b7280;
+      --stack-stroke: #ece7de;
+      --stack-shadow: rgba(17, 24, 39, 0.08);
       --teal-500: #14b8a6;
       --teal-600: #0d9488;
       --teal-700: #0f766e;
@@ -55,17 +65,19 @@
       --gray-800: #1f2937;
       --gray-900: #111827;
       --white: #ffffff;
-      --radius: 14px;
-      --radius-sm: 8px;
+      --radius: 16px;
+      --radius-sm: 10px;
     }
 
     html { scroll-behavior: smooth; }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
-      color: var(--gray-800);
+      color: var(--stack-ink);
       line-height: 1.6;
-      background: var(--white);
+      background:
+        radial-gradient(circle at top left, rgba(245,166,35,0.12), transparent 28%),
+        linear-gradient(180deg, #fbfaf6 0%, var(--stack-bg) 100%);
       -webkit-font-smoothing: antialiased;
     }
 
@@ -78,10 +90,10 @@
     /* ─── Header ─── */
     header {
       padding: 14px 0;
-      border-bottom: 1px solid var(--gray-200);
+      border-bottom: 1px solid rgba(236,231,222,0.8);
       position: sticky;
       top: 0;
-      background: rgba(255,255,255,0.96);
+      background: rgba(251,250,246,0.9);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       z-index: 100;
@@ -99,7 +111,7 @@
       gap: 8px;
       font-size: 17px;
       font-weight: 700;
-      color: var(--gray-900);
+      color: var(--stack-ink);
       text-decoration: none;
     }
 
@@ -123,17 +135,19 @@
     header nav a:hover { background: var(--gray-100); color: var(--gray-900); }
 
     .nav-cta {
-      background: var(--teal-600) !important;
+      background: var(--stack-primary) !important;
       color: var(--white) !important;
       margin-left: 4px;
+      box-shadow: 0 10px 24px rgba(245,166,35,0.24);
     }
 
-    .nav-cta:hover { background: var(--teal-700) !important; }
+    .nav-cta:hover { background: #e99613 !important; }
 
     /* ─── Hero ─── */
     .hero {
       padding: 72px 0 0;
       overflow: hidden;
+      position: relative;
     }
 
     .hero-inner {
@@ -144,14 +158,18 @@
     }
 
     .hero-trust-bar {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 8px;
       font-size: 13px;
       font-weight: 600;
-      color: var(--teal-700);
+      color: #8f6310;
       margin-bottom: 20px;
       flex-wrap: wrap;
+      padding: 8px 12px;
+      background: rgba(245,166,35,0.10);
+      border: 1px solid rgba(245,166,35,0.18);
+      border-radius: 999px;
     }
 
     .hero-trust-bar .dot {
@@ -172,12 +190,12 @@
 
     .hero h1 em {
       font-style: normal;
-      color: var(--teal-600);
+      color: var(--stack-primary);
     }
 
     .hero .hero-sub {
       font-size: 18px;
-      color: var(--gray-500);
+      color: var(--stack-subtext);
       line-height: 1.6;
       margin-bottom: 36px;
       max-width: 440px;
@@ -202,7 +220,7 @@
     .hero-footnote {
       margin-top: 16px;
       font-size: 13px;
-      color: var(--gray-400);
+      color: var(--stack-subtext);
     }
 
     /* Phone mockup */
@@ -213,15 +231,16 @@
     }
 
     .phone-frame {
-      width: 260px;
-      background: var(--gray-900);
-      border-radius: 40px;
+      width: 280px;
+      background: #171717;
+      border-radius: 42px;
       padding: 16px 12px;
       box-shadow:
-        0 0 0 2px #3a3a3a,
-        0 40px 80px rgba(0,0,0,0.35),
-        0 16px 32px rgba(0,0,0,0.2);
+        0 0 0 2px #2a2a2a,
+        0 44px 90px rgba(0,0,0,0.34),
+        0 16px 32px rgba(0,0,0,0.16);
       position: relative;
+      transform: rotate(-2deg);
     }
 
     .phone-notch {
@@ -233,40 +252,40 @@
     }
 
     .phone-screen {
-      background: var(--gray-900);
+      background: #f4f5ef;
       border-radius: 28px;
       overflow: hidden;
-      min-height: 500px;
+      min-height: 560px;
     }
 
     .app-ui {
-      background: #0a0f0e;
+      background: linear-gradient(180deg, #fbfbf7 0%, #f2f2eb 100%);
       height: 100%;
-      min-height: 500px;
-      padding: 12px;
+      min-height: 560px;
+      padding: 14px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
     }
 
     .app-ui-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 4px 0 8px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      margin-bottom: 4px;
+      padding: 6px 0 10px;
+      border-bottom: 1px solid rgba(18,18,18,0.06);
+      margin-bottom: 2px;
     }
 
     .app-ui-title {
       font-size: 16px;
       font-weight: 700;
-      color: #ffffff;
+      color: var(--stack-ink);
     }
 
     .app-ui-date {
       font-size: 10px;
-      color: var(--teal-500);
+      color: var(--stack-subtext);
       font-weight: 600;
     }
 
@@ -274,14 +293,15 @@
       display: flex;
       align-items: center;
       gap: 4px;
-      background: rgba(20,184,166,0.15);
-      border: 1px solid rgba(20,184,166,0.3);
+      background: rgba(245,166,35,0.14);
+      border: 1px solid rgba(245,166,35,0.28);
       border-radius: 100px;
-      padding: 3px 10px;
+      padding: 5px 12px;
       font-size: 11px;
       font-weight: 700;
-      color: var(--teal-500);
+      color: #9b6808;
       margin-bottom: 8px;
+      width: fit-content;
     }
 
     .app-section-label {
@@ -289,37 +309,39 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: var(--gray-500);
-      padding: 6px 0 4px;
+      color: var(--stack-subtext);
+      padding: 8px 0 4px;
     }
 
     .app-supplement-row {
       display: flex;
       align-items: center;
       gap: 10px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 10px;
+      background: rgba(255,255,255,0.82);
+      border: 1px solid var(--stack-stroke);
+      border-radius: 14px;
       padding: 10px 12px;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+      box-shadow: 0 8px 16px rgba(17,24,39,0.04);
     }
 
     .app-supplement-row.checked {
-      background: rgba(20,184,166,0.08);
-      border-color: rgba(20,184,166,0.2);
+      background: rgba(245,166,35,0.10);
+      border-color: rgba(245,166,35,0.24);
     }
 
     .app-check {
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      border: 2px solid rgba(255,255,255,0.2);
+      border: 2px solid rgba(245,166,35,0.28);
       flex-shrink: 0;
+      background: #fffdfa;
     }
 
     .app-check.done {
-      background: var(--teal-600);
-      border-color: var(--teal-600);
+      background: var(--stack-primary);
+      border-color: var(--stack-primary);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -332,7 +354,7 @@
     .app-supp-name {
       font-size: 12px;
       font-weight: 600;
-      color: #ffffff;
+      color: var(--stack-ink);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -340,7 +362,7 @@
 
     .app-supp-dose {
       font-size: 10px;
-      color: var(--gray-500);
+      color: var(--stack-subtext);
     }
 
     .app-stats-row {
@@ -373,10 +395,52 @@
     }
 
     /* ─── Stats Bar ─── */
+
+    .hero-card-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+      max-width: 520px;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.76);
+      border: 1px solid var(--stack-stroke);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 10px 24px rgba(17,24,39,0.05);
+    }
+
+    .hero-card-kicker {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--stack-subtext);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .hero-card-value {
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--stack-ink);
+      margin-bottom: 4px;
+    }
+
+    .hero-card-note {
+      font-size: 12px;
+      color: var(--stack-subtext);
+      line-height: 1.35;
+    }
+
     .stats-bar {
       padding: 48px 0;
-      border-top: 1px solid var(--gray-100);
+      border-top: 1px solid var(--stack-stroke);
       margin-top: 64px;
+      background: rgba(255,255,255,0.64);
+      backdrop-filter: blur(8px);
     }
 
     .stats-bar-inner {
@@ -1094,7 +1158,7 @@
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
-        <a href="https://apps.apple.com/app/stackday/id6761502044" class="nav-cta">Download</a>
+        <a href="https://apps.apple.com/us/app/stackday-supplement-tracker/id6761502044" class="nav-cta">Download</a>
       </nav>
     </div>
   </header>
@@ -1109,16 +1173,33 @@
             <span class="dot"></span>
             <span>No Account Required</span>
             <span class="dot"></span>
-            <span>Free to Download</span>
+            <span>Built for iPhone</span>
           </div>
-          <h1>A better way to manage your <em>supplement routine</em></h1>
-          <p class="hero-sub">Build your daily stack, check off each supplement by time of day, and build streaks that keep you consistent. Simple, private, effective.</p>
+          <h1>Track your <em>daily stack</em> like it actually matters</h1>
+          <p class="hero-sub">A calmer, more tactile supplement tracker inspired by the real app. Check off doses, protect your streak, see adherence at a glance, and keep everything private on-device.</p>
           <div class="hero-actions">
-            <a href="https://apps.apple.com/app/stackday/id6761502044" class="app-store-badge" aria-label="Download StackDay on the App Store">
+            <a href="https://apps.apple.com/us/app/stackday-supplement-tracker/id6761502044" class="app-store-badge" aria-label="Download StackDay on the App Store">
               <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" loading="eager">
             </a>
           </div>
-          <p class="hero-footnote">iPhone only &middot; iOS 17+ &middot; All data stays on your device</p>
+          <div class="hero-card-strip">
+            <div class="hero-card">
+              <div class="hero-card-kicker">Current streak</div>
+              <div class="hero-card-value">14 days</div>
+              <div class="hero-card-note">Momentum-first tracking that feels like the real Today screen.</div>
+            </div>
+            <div class="hero-card">
+              <div class="hero-card-kicker">30-day rate</div>
+              <div class="hero-card-value">87%</div>
+              <div class="hero-card-note">Adherence and trends surfaced without turning into a spreadsheet.</div>
+            </div>
+            <div class="hero-card">
+              <div class="hero-card-kicker">Privacy</div>
+              <div class="hero-card-value">Offline</div>
+              <div class="hero-card-note">No account, no sync, no weird health-data theater.</div>
+            </div>
+          </div>
+          <p class="hero-footnote">iPhone only &middot; iOS 17+ &middot; streaks, stats, and privacy-first tracking</p>
         </div>
         <div class="hero-visual">
           <div class="phone-frame">
@@ -1195,15 +1276,15 @@
       <div class="stats-bar-inner">
         <div class="stat-item">
           <div class="stat-number"><em>100%</em></div>
-          <div class="stat-label">Private — data never leaves your iPhone</div>
+          <div class="stat-label">Private, offline, and designed like the app itself</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">3</div>
-          <div class="stat-label">Times of day — morning, afternoon, evening</div>
+          <div class="stat-label">Three time slots that mirror the real daily flow</div>
         </div>
         <div class="stat-item">
           <div class="stat-number"><em>∞</em></div>
-          <div class="stat-label">Supplements with Pro — no limits, no caps</div>
+          <div class="stat-label">Focused UI, zero clutter, all momentum</div>
         </div>
       </div>
     </div>
@@ -1506,7 +1587,7 @@
             <li><span class="tick">✓</span> Streak tracking</li>
             <li><span class="tick">✓</span> Limited supplements</li>
           </ul>
-          <a href="https://apps.apple.com/app/stackday/id6761502044" class="btn-outline">Get Started Free</a>
+          <a href="https://apps.apple.com/us/app/stackday-supplement-tracker/id6761502044" class="btn-outline">Get Started Free</a>
         </div>
         <div class="price-card featured">
           <div class="price-badge">Best Value</div>
@@ -1519,7 +1600,7 @@
             <li><span class="tick">✓</span> All premium features</li>
             <li><span class="tick">✓</span> All future updates</li>
           </ul>
-          <a href="https://apps.apple.com/app/stackday/id6761502044" class="btn-primary">Download Free</a>
+          <a href="https://apps.apple.com/us/app/stackday-supplement-tracker/id6761502044" class="btn-primary">Download Free</a>
         </div>
         <div class="price-card">
           <h3>Pro Monthly</h3>
@@ -1531,7 +1612,7 @@
             <li><span class="tick">✓</span> All premium features</li>
             <li><span class="tick">✓</span> All future updates</li>
           </ul>
-          <a href="https://apps.apple.com/app/stackday/id6761502044" class="btn-outline">Download Free</a>
+          <a href="https://apps.apple.com/us/app/stackday-supplement-tracker/id6761502044" class="btn-outline">Download Free</a>
         </div>
       </div>
       <p class="pricing-note">Subscriptions auto-renew. Cancel anytime in iPhone Settings &rarr; Subscriptions &rarr; StackDay.</p>
@@ -1577,7 +1658,7 @@
     <div class="container">
       <h2>Start building your streak today</h2>
       <p>Free to download. No account. No setup. Just open the app and add your first supplement.</p>
-      <a href="https://apps.apple.com/app/stackday/id6761502044" class="cta-store-badge" aria-label="Download StackDay on the App Store">
+      <a href="https://apps.apple.com/us/app/stackday-supplement-tracker/id6761502044" class="cta-store-badge" aria-label="Download StackDay on the App Store">
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" loading="eager">
       </a>
       <p class="cta-footnote">Available on iPhone &middot; Requires iOS 17+ &middot; Free with optional Pro upgrade</p>
