@@ -108,11 +108,11 @@ Depending on your location, you may have the following rights:
 - **Opt Out of Notifications.** You can disable push notifications at any time through your device's settings.
 - **Opt Out of Analytics.** You can limit analytics collection by disabling "Allow Apps to Request to Track" in iOS Settings > Privacy & Security > Tracking.
 
-To exercise any of these rights, please contact us at ben@thefoghill.com. We will respond within 30 days (or sooner as required by applicable law).
+To exercise any of these rights, please contact us at npc@foggylabs.ai. We will respond within 30 days (or sooner as required by applicable law).
 
 ## 7. Children's Privacy
 
-The App is not directed to children under the age of 13. We do not knowingly collect personal data from children under 13. If we learn that we have collected personal data from a child under 13, we will take steps to delete that data promptly. If you believe that a child under 13 has provided us with personal data, please contact us at ben@thefoghill.com.
+The App is not directed to children under the age of 13. We do not knowingly collect personal data from children under 13. If we learn that we have collected personal data from a child under 13, we will take steps to delete that data promptly. If you believe that a child under 13 has provided us with personal data, please contact us at npc@foggylabs.ai.
 
 ## 8. International Data Transfers
 
@@ -129,7 +129,7 @@ If you are a California resident, you have additional rights under the Californi
 - The right to correct inaccurate personal data
 - The right to limit use of sensitive personal information
 
-To exercise these rights, contact us at ben@thefoghill.com.
+To exercise these rights, contact us at npc@foggylabs.ai.
 
 ## 10. European Privacy Rights (GDPR)
 
@@ -150,7 +150,7 @@ Under the GDPR, you have the right to:
 
 You have the right to lodge a complaint with your local data protection authority if you believe your rights have been violated.
 
-To exercise these rights, contact us at ben@thefoghill.com. We will respond to verified requests within 30 days.
+To exercise these rights, contact us at npc@foggylabs.ai. We will respond to verified requests within 30 days.
 
 ## 11. Changes to This Privacy Policy
 
@@ -160,6 +160,6 @@ We may update this Privacy Policy from time to time. We will notify you of mater
 
 If you have questions about this Privacy Policy, please contact us:
 
-**Email:** ben@thefoghill.com
+**Email:** npc@foggylabs.ai
 
 This Privacy Policy is effective as of March 30, 2026.

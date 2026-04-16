@@ -107,7 +107,7 @@ We may update these Terms from time to time. We will notify you of material chan
 
 If you have questions about these Terms, please contact us:
 
-**Email:** ben@thefoghill.com  
+**Email:** npc@foggylabs.ai  
 **Company:** Fog Hill LLC (d/b/a Foggy Labs)
 
 These Terms are effective as of April 6, 2026.

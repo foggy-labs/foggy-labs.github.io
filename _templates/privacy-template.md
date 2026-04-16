@@ -85,7 +85,7 @@ We implement reasonable administrative, technical, and physical safeguards to pr
 - **Withdraw Consent.** Where processing is based on consent, you may withdraw consent at any time.
 - **Opt Out of Analytics.** Disable "Allow Apps to Request to Track" in iOS Settings > Privacy & Security > Tracking.
 
-To exercise any of these rights, please contact us at ben@thefoghill.com.
+To exercise any of these rights, please contact us at npc@foggylabs.ai.
 
 ## 7. Children's Privacy
 
@@ -97,7 +97,7 @@ Your data may be processed in the United States or other countries where our ser
 
 ## 9. California Privacy Rights (CCPA/CPRA)
 
-If you are a California resident, you have the right to know what personal data we collect, request deletion, and opt out of the sale of personal data. We do not sell your personal data. Contact us at ben@thefoghill.com.
+If you are a California resident, you have the right to know what personal data we collect, request deletion, and opt out of the sale of personal data. We do not sell your personal data. Contact us at npc@foggylabs.ai.
 
 ## 10. European Privacy Rights (GDPR)
 
@@ -109,6 +109,6 @@ We may update this Privacy Policy from time to time. Your continued use of the A
 
 ## 12. Contact Us
 
-**Email:** ben@thefoghill.com
+**Email:** npc@foggylabs.ai
 
 This Privacy Policy is effective as of APP_DATE.

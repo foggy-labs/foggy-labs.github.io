@@ -88,7 +88,7 @@ The App is not directed to children under the age of 13. We do not knowingly col
 
 ## 7. Your Privacy Rights
 
-Depending on your location, you may have certain rights regarding your personal information, including the right to access, correct, or delete the personal information we hold about you. To exercise these rights, please contact us at ben@thefoghill.com.
+Depending on your location, you may have certain rights regarding your personal information, including the right to access, correct, or delete the personal information we hold about you. To exercise these rights, please contact us at npc@foggylabs.ai.
 
 ## 8. California Privacy Rights (CCPA/CPRA)
 
@@ -100,7 +100,7 @@ If you are a California resident, you have the following rights under the Califo
 - **Right to Opt-Out:** You have the right to opt out of the sale or sharing of your personal information. We do not sell or share your personal information for cross-context behavioral advertising.
 - **Right to Non-Discrimination:** We will not discriminate against you for exercising any of your CCPA/CPRA rights.
 
-To exercise these rights, contact us at ben@thefoghill.com.
+To exercise these rights, contact us at npc@foggylabs.ai.
 
 ## 9. European Privacy Rights (GDPR)
 
@@ -121,7 +121,7 @@ Under the GDPR, you have the right to:
 
 You have the right to lodge a complaint with your local data protection authority if you believe your rights have been violated.
 
-To exercise these rights, contact us at ben@thefoghill.com. We will respond to verified requests within 30 days.
+To exercise these rights, contact us at npc@foggylabs.ai. We will respond to verified requests within 30 days.
 
 ## 10. International Data Transfers
 
@@ -142,7 +142,7 @@ We may update this Privacy Policy from time to time. We will notify you of any c
 If you have questions or concerns about this Privacy Policy, please contact us at:
 
 **Fog Hill LLC**  
-Email: ben@thefoghill.com
+Email: npc@foggylabs.ai
 
 ---
 

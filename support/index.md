@@ -24,7 +24,7 @@ Need help with one of our apps? Find your app below.
 
 Can't find what you're looking for? Email us directly:
 
-**[ben@thefoghill.com](mailto:ben@thefoghill.com)**
+**[npc@foggylabs.ai](mailto:npc@foggylabs.ai)**
 
 We typically respond within 24 hours.
 

@@ -10,7 +10,7 @@ Need help with HydroTrack? We're here for you.
 
 ## Contact Us
 
-**Email:** [ben@thefoghill.com](mailto:ben@thefoghill.com)
+**Email:** [npc@foggylabs.ai](mailto:npc@foggylabs.ai)
 
 We typically respond within 24 hours.
 
@@ -38,7 +38,7 @@ Open HydroTrack > Settings > Restore Purchases. This will restore any active sub
 Your hydration data is stored locally on your device. Deleting the app will remove all local data. If you have Apple Health sync enabled, your water intake data will remain in Apple Health unless you delete it separately.
 
 **I found a bug. How do I report it?**
-Email us at ben@thefoghill.com with a description of the issue, your device model, and iOS version. Screenshots help!
+Email us at npc@foggylabs.ai with a description of the issue, your device model, and iOS version. Screenshots help!
 
 ## Legal
 

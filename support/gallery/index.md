@@ -10,7 +10,7 @@ Need help with Gallery? We're here for you.
 
 ## Contact Us
 
-**Email:** [ben@thefoghill.com](mailto:ben@thefoghill.com)
+**Email:** [npc@foggylabs.ai](mailto:npc@foggylabs.ai)
 
 We typically respond within 24 hours.
 
@@ -32,10 +32,10 @@ Yes. All your exhibition saves, visit logs, and follows are stored locally on yo
 All your locally stored data (saved exhibitions, visit logs, follows) will be permanently deleted with the app. We recommend noting any must-see exhibitions or exporting your data before uninstalling.
 
 **How do I delete my data?**
-Deleting the app removes all locally stored data from your device. To request deletion of any analytics data we may hold, email us at ben@thefoghill.com.
+Deleting the app removes all locally stored data from your device. To request deletion of any analytics data we may hold, email us at npc@foggylabs.ai.
 
 **I found a bug. How do I report it?**
-Email us at ben@thefoghill.com with a description of the issue, your device model, and iOS version. Screenshots help!
+Email us at npc@foggylabs.ai with a description of the issue, your device model, and iOS version. Screenshots help!
 
 ---
 

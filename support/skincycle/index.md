@@ -10,7 +10,7 @@ Need help with SkinCycle? We're here for you.
 
 ## Contact Us
 
-**Email:** [ben@thefoghill.com](mailto:ben@thefoghill.com)
+**Email:** [npc@foggylabs.ai](mailto:npc@foggylabs.ai)
 
 We typically respond within 24 hours.
 
@@ -38,7 +38,7 @@ Open SkinCycle > Settings > Restore Purchases. This will restore any active subs
 Locally stored data is removed from your device. If you use iCloud sync, your data remains in your iCloud account and will restore when you reinstall the app.
 
 **I found a bug. How do I report it?**
-Email us at ben@thefoghill.com with a description of the issue, your device model, and iOS version. Screenshots help!
+Email us at npc@foggylabs.ai with a description of the issue, your device model, and iOS version. Screenshots help!
 
 ## Legal
 

@@ -10,7 +10,7 @@ Need help with StudioNow? We're here for you.
 
 ## Contact Us
 
-**Email:** [ben@thefoghill.com](mailto:ben@thefoghill.com)
+**Email:** [npc@foggylabs.ai](mailto:npc@foggylabs.ai)
 
 We typically respond within 24 hours.
 
@@ -29,7 +29,7 @@ Go to your iPhone Settings → [Your Name] → Subscriptions → StudioNow. You 
 Open StudioNow → Settings → Account → Delete Account. Your data will be removed within 30 days per our [Privacy Policy](/privacy/studionow/).
 
 **I found a bug. How do I report it?**
-Email us at ben@thefoghill.com with a description of the issue, your device model, and iOS version. Screenshots help!
+Email us at npc@foggylabs.ai with a description of the issue, your device model, and iOS version. Screenshots help!
 
 ## Legal
 

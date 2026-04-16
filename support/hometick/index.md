@@ -10,7 +10,7 @@ Need help with HomeTick? We're here for you.
 
 ## Contact Us
 
-**Email:** [ben@thefoghill.com](mailto:ben@thefoghill.com)
+**Email:** [npc@foggylabs.ai](mailto:npc@foggylabs.ai)
 
 We typically respond within 24 hours.
 
@@ -41,7 +41,7 @@ Open HomeTick > Settings > Restore Purchases. This will restore any active subsc
 All your home and task data is stored locally on your device. Deleting the app will permanently remove all data. We recommend keeping regular device backups through iCloud or your computer.
 
 **I found a bug. How do I report it?**
-Email us at ben@thefoghill.com with a description of the issue, your device model, and iOS version. Screenshots help!
+Email us at npc@foggylabs.ai with a description of the issue, your device model, and iOS version. Screenshots help!
 
 ## Legal
 

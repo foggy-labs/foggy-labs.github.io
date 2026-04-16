@@ -84,6 +84,6 @@ We may update these Terms from time to time. Continued use constitutes acceptanc
 
 ## 17. Contact Us
 
-**Email:** ben@thefoghill.com
+**Email:** npc@foggylabs.ai
 
 These Terms are effective as of April 4, 2026.

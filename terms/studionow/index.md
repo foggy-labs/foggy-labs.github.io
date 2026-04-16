@@ -151,6 +151,6 @@ We may update these Terms from time to time. We will notify you of material chan
 
 If you have questions about these Terms, please contact us:
 
-**Email:** ben@thefoghill.com
+**Email:** npc@foggylabs.ai
 
 These Terms of Service are effective as of March 30, 2026.
