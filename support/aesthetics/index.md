@@ -4,9 +4,9 @@ title: Aesthetics - Support
 favicon_emoji: "✨"
 ---
 
-# Aesthetics: Aesthetic Analysis - Support
+# Aesthetics — Support
 
-Need help with Aesthetics? We're here for you.
+Need help with your consultation? We're here.
 
 ## Contact Us
 
@@ -23,7 +23,7 @@ Aesthetics analyzes a photo of your face and generates a detailed aesthetic repo
 For the most accurate analysis: use a front-facing photo with a neutral expression, natural lighting, and no filters or edits. The photo should be a solo portrait cropped from mid-chest up, taken at eye level.
 
 **Are my photos stored?**
-No. Your photo is sent for analysis and immediately discarded. We never store, save, or share your images after your report is generated. Photos saved for history comparison are stored only on your device.
+No. Your photo is sent for analysis and immediately discarded. We never store, save, or share your images after your report is generated. Photos saved as part of your on-device analysis history are stored only on your device.
 
 **Is this medical advice?**
 No. Aesthetics provides one stylistic perspective for grooming and presentation. It is not a medical, psychiatric, or identity assessment. It will never recommend surgery, procedures, or weight changes.
@@ -43,8 +43,8 @@ Go to your iPhone Settings > [Your Name] > Subscriptions > Aesthetics. You can u
 **How do I restore my purchases?**
 Open Aesthetics > tap the info (ⓘ) button on the main screen > Restore Purchases. This will restore any active subscriptions associated with your Apple ID.
 
-**How does the compare feature work?**
-After you have two or more analyses, tap History on the main screen, then tap Compare. Select two reports to see a side-by-side comparison of your scores, archetype shifts, and changes over time.
+**How do I track my direction over time?**
+After you have two or more analyses, tap History on the main screen, then tap **Compare**. Pick two reports and you'll see how your archetype, structure read, and overall direction have shifted between them. The whole feature is a progress check on your own consultation arc — not a benchmark against anyone else.
 
 **Can I share my results?**
 Yes! On the report screen, tap the share button to generate a shareable score card, archetype card, or progress card. These are optimized for social media sharing.

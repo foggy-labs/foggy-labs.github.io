@@ -57,7 +57,7 @@ When you submit a photo for analysis:
 3. The analysis report (text only, no photo) is stored locally on your device.
 4. **Your photo is not retained by us or by Anthropic after the analysis is complete.** Anthropic's data retention policy applies to API requests; we use their zero-retention API configuration.
 
-Photos saved for analysis history comparison are stored **only on your device** and are never uploaded to any server.
+Photos saved as part of your on-device analysis history are stored **only on your device** and are never uploaded to any server.
 
 ## 4. Local Data Storage
 

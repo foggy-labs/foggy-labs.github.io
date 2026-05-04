@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+  <title>Aesthetics — Private Style Consult for iPhone | Foggy Labs</title>
+  <meta name="description" content="Aesthetics is a private grooming and style consultation, in your pocket. Take one photo, get a refined read on your archetype and a personalized direction for grooming, skincare, and presentation. iPhone, 18+.">
+  <link rel="canonical" href="https://foggy-labs.github.io/aesthetics/">
+  <!-- Smart App Banner — app-id pending App Store assignment -->
+  <meta name="apple-itunes-app" content="app-id=APP_STORE_ID_PENDING">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aesthetics — Private Style Consult for iPhone">
+  <meta property="og:description" content="A private grooming and style consultation, in your pocket. Refined direction for your archetype.">
+  <meta property="og:url" content="https://foggy-labs.github.io/aesthetics/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Foggy Labs">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Aesthetics",
+    "description": "A private grooming and style consultation. Personalized direction for grooming, skincare, and presentation, structured around ten distinct style archetypes.",
+    "url": "https://foggy-labs.github.io/aesthetics/",
+    "applicationCategory": "LifestyleApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "operatingSystem": "iOS"
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0c0d10;
+      --surface: #14161b;
+      --surface-2: #1c1f26;
+      --border: #2a2e38;
+      --text: #f3efe6;
+      --text-muted: #a8a397;
+      --text-dim: #6f6b62;
+      --accent: #c9a96a;
+      --accent-soft: rgba(201, 169, 106, 0.12);
+      --accent-strong: #d8b876;
+      --serif: 'Georgia', 'Times New Roman', serif;
+      --radius: 14px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(12, 13, 16, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      z-index: 100;
+    }
+
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    .logo span { color: var(--accent); }
+
+    header nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      margin-left: 28px;
+    }
+
+    header nav a:hover { color: var(--text); }
+
+    /* Hero */
+    .hero {
+      padding: 80px 0 56px;
+      text-align: center;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: 52px;
+      font-weight: 600;
+      line-height: 1.1;
+      color: var(--text);
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: var(--text-muted);
+      max-width: 580px;
+      margin: 0 auto 36px;
+      line-height: 1.55;
+    }
+
+    .app-store-badge {
+      display: inline-block;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+      filter: invert(1);
+    }
+
+    .app-store-badge:hover { transform: scale(1.04); opacity: 0.9; }
+
+    .app-store-badge img {
+      height: 54px;
+      width: auto;
+    }
+
+    .hero-subtext {
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    /* Consultation framing */
+    .what-it-is {
+      padding: 72px 0;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .ps-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: stretch;
+    }
+
+    .ps-card {
+      padding: 36px 32px;
+      border-radius: var(--radius);
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+    }
+
+    .ps-card h3 {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 14px;
+      color: var(--accent);
+    }
+
+    .ps-card h2 {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+
+    .ps-card p {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* How it works */
+    .how {
+      padding: 88px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .section-header h2 {
+      font-family: var(--serif);
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 14px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-header p {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .step {
+      padding: 32px 28px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .step-number {
+      display: inline-block;
+      font-family: var(--serif);
+      font-size: 28px;
+      color: var(--accent);
+      margin-bottom: 14px;
+      letter-spacing: 0.04em;
+    }
+
+    .step h3 {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+
+    .step p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* Archetypes */
+    .archetypes {
+      padding: 88px 0;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .archetype-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .archetype-card {
+      padding: 32px 28px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface-2);
+    }
+
+    .archetype-card h3 {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .archetype-card p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* Privacy */
+    .privacy-section {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .privacy-section h2 {
+      font-family: var(--serif);
+      font-size: 32px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .privacy-section > .container > p {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 44px;
+      line-height: 1.65;
+    }
+
+    .privacy-points {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .privacy-point {
+      padding: 28px 22px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      text-align: left;
+    }
+
+    .privacy-point .icon {
+      display: inline-flex;
+      width: 36px;
+      height: 36px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 18px;
+      margin-bottom: 14px;
+    }
+
+    .privacy-point h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .privacy-point p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Pricing */
+    .pricing {
+      padding: 88px 0;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .price-card {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 26px;
+      text-align: center;
+    }
+
+    .price-card.featured {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px var(--accent-soft), 0 8px 32px rgba(201, 169, 106, 0.1);
+      position: relative;
+    }
+
+    .price-card.featured::before {
+      content: 'Recommended';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: var(--bg);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .price-card h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 10px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .price-amount {
+      font-family: var(--serif);
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    .price-amount span {
+      font-family: -apple-system, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-dim);
+    }
+
+    .price-card .price-detail {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-top: 6px;
+      margin-bottom: 22px;
+      min-height: 18px;
+    }
+
+    .price-card ul {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 26px;
+    }
+
+    .price-card ul li {
+      font-size: 14px;
+      color: var(--text-muted);
+      padding: 6px 0;
+      padding-left: 22px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .price-card ul li::before {
+      content: '·';
+      position: absolute;
+      left: 6px;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1;
+      top: 8px;
+    }
+
+    .pricing-note {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 13px;
+      color: var(--text-dim);
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    /* FAQ */
+    .faq {
+      padding: 88px 0;
+    }
+
+    .faq-list {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-item summary {
+      padding: 22px 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-item summary::-webkit-details-marker { display: none; }
+
+    .faq-item summary::after {
+      content: '+';
+      font-size: 22px;
+      font-weight: 300;
+      color: var(--accent);
+      transition: transform 0.2s ease;
+    }
+
+    .faq-item[open] summary::after {
+      content: '\2212';
+    }
+
+    .faq-item .answer {
+      padding-bottom: 22px;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    /* Disclaimer band */
+    .disclaimer {
+      padding: 48px 0;
+      background: var(--surface-2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .disclaimer .container {
+      max-width: 720px;
+    }
+
+    .disclaimer p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .disclaimer strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* CTA */
+    .cta {
+      padding: 96px 0;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-family: var(--serif);
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .cta p {
+      font-size: 17px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 36px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    footer nav a {
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 14px;
+      margin: 0 12px;
+    }
+
+    footer nav a:hover { color: var(--text); }
+
+    footer .copyright {
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero { padding: 56px 0 40px; }
+      .hero h1 { font-size: 36px; }
+      .hero p { font-size: 17px; }
+      .ps-grid { grid-template-columns: 1fr; gap: 18px; }
+      .steps { grid-template-columns: 1fr; }
+      .archetype-grid { grid-template-columns: 1fr; }
+      .privacy-points { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; max-width: 360px; }
+      .section-header h2 { font-size: 28px; }
+      .cta h2 { font-size: 28px; }
+      header nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="https://foggy-labs.github.io/" class="logo">Foggy <span>Labs</span></a>
+      <nav>
+        <a href="#how">How it works</a>
+        <a href="#archetypes">Archetypes</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-eyebrow">Private style consult · iPhone</div>
+      <h1>Your private aesthetic consultation,<br>in your pocket.</h1>
+      <p>One photo, one refined read. Aesthetics gives you a clinical, personalized direction for grooming, skincare, and presentation — structured around the archetype you already are.</p>
+      <a href="#" class="app-store-badge" aria-label="Download Aesthetics on the App Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" loading="eager">
+      </a>
+      <p class="hero-subtext">iPhone · 18+ · Photos discarded immediately after analysis</p>
+    </div>
+  </section>
+
+  <!-- What it is / what it isn't -->
+  <section class="what-it-is">
+    <div class="container">
+      <div class="ps-grid">
+        <div class="ps-card">
+          <h3>What it is</h3>
+          <h2>A private grooming and style consultation</h2>
+          <p>Aesthetics reads your presentation the way a stylist or grooming consultant would — calmly, specifically, and with concrete direction. You leave with a personalized plan: how you already present, the archetype that fits, and the small grooming and styling moves that close the gap to your most refined version.</p>
+        </div>
+        <div class="ps-card">
+          <h3>What it isn't</h3>
+          <h2>Not a contest. Not medical advice.</h2>
+          <p>Aesthetics does not judge you against other people. It is a private consultation focused entirely on your own presentation. It is also not a medical, psychiatric, or identity assessment, and it will never recommend surgery, procedures, or weight changes. It is a stylistic perspective, written for adults who want to optimize their own grooming and style direction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-header">
+        <h2>How the consultation works</h2>
+        <p>Three quiet steps. Eight to twelve seconds for the analysis itself.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <h3>Take one photo</h3>
+          <p>Neutral expression, front-facing, natural light, no filters. The app validates your photo and tells you exactly what to fix if it isn't ready.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <h3>Refined analysis</h3>
+          <p>Your photo is sent to a secure AI analysis pipeline, processed, and immediately discarded. Nothing is stored on a server. No facial profile is ever built.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <h3>Your direction</h3>
+          <p>You get your archetype, your strengths, and a personalized optimization plan — specific grooming, skincare, and styling moves you can act on this week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Archetypes -->
+  <section class="archetypes" id="archetypes">
+    <div class="container">
+      <div class="section-header">
+        <h2>Find your archetype. Then optimize toward it.</h2>
+        <p>Ten distinct style archetypes — each with its own grooming, skincare, and presentation playbook. The point is not to look like someone else. It is to look more refined as yourself.</p>
+      </div>
+      <div class="archetype-grid">
+        <div class="archetype-card">
+          <h3>Refined direction, not a label</h3>
+          <p>The report names the archetype that already fits you — Clean Executive, Modern European, Rugged Minimalist, and seven others — then gives you the specific moves that sharpen that direction.</p>
+        </div>
+        <div class="archetype-card">
+          <h3>Personalized, not generic</h3>
+          <p>Every report is written for the photo in front of it. Skincare, beard direction, hair, frames, fit, color — the recommendations are yours, not a copy-paste of someone else's playbook.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy callout -->
+  <section class="privacy-section">
+    <div class="container">
+      <h2>Privacy is the product.</h2>
+      <p>Aesthetics is built so the consultation feels private. Your photo is sent for analysis, processed, and immediately discarded — never stored, never shared, never used to build a profile of you.</p>
+      <div class="privacy-points">
+        <div class="privacy-point">
+          <div class="icon">🔒</div>
+          <h3>Photos discarded immediately</h3>
+          <p>After analysis completes, the photo is gone. We do not retain it on any server.</p>
+        </div>
+        <div class="privacy-point">
+          <div class="icon">🚫</div>
+          <h3>No facial profile</h3>
+          <p>No facial database, no identification, no linking your face to any record. Each session is independent.</p>
+        </div>
+        <div class="privacy-point">
+          <div class="icon">📱</div>
+          <h3>History stays on-device</h3>
+          <p>Your reports and any saved history photos live only on your iPhone, in iOS-encrypted storage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2>Pricing</h2>
+        <p>Try it once. Subscribe if it's useful. Cancel anytime in iOS Settings.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Single Report</h3>
+          <div class="price-amount">$9.99<span> once</span></div>
+          <p class="price-detail">No subscription</p>
+          <ul>
+            <li>One full consultation</li>
+            <li>Archetype + optimization plan</li>
+            <li>Stays in your history</li>
+          </ul>
+        </div>
+        <div class="price-card featured">
+          <h3>Annual</h3>
+          <div class="price-amount">$59.99<span>/yr</span></div>
+          <p class="price-detail">Best value · ongoing direction</p>
+          <ul>
+            <li>Unlimited consultations</li>
+            <li>All archetype playbooks</li>
+            <li>Track your direction over time</li>
+            <li>All future features</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>Weekly</h3>
+          <div class="price-amount">$6.99<span>/wk</span></div>
+          <p class="price-detail">3-day free trial</p>
+          <ul>
+            <li>Unlimited consultations</li>
+            <li>All archetype playbooks</li>
+            <li>Cancel anytime</li>
+          </ul>
+        </div>
+      </div>
+      <p class="pricing-note">Subscriptions auto-renew until cancelled. Manage or cancel in <strong>iOS Settings → Apple ID → Subscriptions</strong>. Pricing shown is the standard US rate; the App Store displays your local price at checkout.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently asked</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How does the analysis work?</summary>
+          <div class="answer">You take one neutral, front-facing photo. The app validates it (lighting, pose, expression, filters), then sends it via an encrypted connection to a secure AI analysis pipeline. The model returns your archetype, strengths, and a personalized optimization plan as text. The photo is immediately discarded after the analysis completes — it is not stored on any server.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What kind of app is this?</summary>
+          <div class="answer">A private grooming and style consultation. It does not judge you against other people, and it is not a contest. The point is direction — toward your most refined version of yourself, written specifically for the photo in front of it.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Are my photos kept?</summary>
+          <div class="answer">No. The photo you submit for analysis is discarded immediately after the report is generated. We never store it on a server, never share it, and never use it to train a model. Photos saved for your personal history live only on your iPhone, in iOS-encrypted storage.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What are the archetypes?</summary>
+          <div class="answer">Ten distinct style directions — Clean Executive, Modern European, Rugged Minimalist, Model Editorial, Old Money, Soft Boy, Athletic Casual, Bohemian Creative, Nordic Cool, and Mediterranean Classic. The report identifies which archetype your presentation already fits, then gives you the specific grooming, skincare, and styling moves that sharpen that direction.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Is this medical advice?</summary>
+          <div class="answer">No. Aesthetics is not a medical, psychiatric, or identity assessment. It will never recommend surgery, procedures, or weight changes. It is a stylistic perspective focused on grooming, skincare, and presentation — the things you can change with a routine and a haircut.</div>
+        </details>
+        <details class="faq-item">
+          <summary>What if my photo is rejected?</summary>
+          <div class="answer">The app validates each photo before analysis. If something is off — heavy filter, harsh lighting, side angle, expression — it tells you exactly what to fix and lets you try again. Validation runs locally before anything is sent for analysis.</div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I cancel my subscription?</summary>
+          <div class="answer">Open the iOS Settings app, tap your name, then Subscriptions, then Aesthetics. You can cancel from there at any time and keep access through the end of your billing period.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Is there an age requirement?</summary>
+          <div class="answer">Yes. Aesthetics is designed for adults aged 18 and over.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Disclaimer band -->
+  <section class="disclaimer">
+    <div class="container">
+      <p><strong>This is not a medical, psychiatric, or identity assessment.</strong> It will never recommend surgery, procedures, or weight changes. Aesthetics provides one stylistic perspective for grooming and presentation, intended for adults aged 18 and over.</p>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready for your consultation?</h2>
+      <p>One photo. Refined direction. Your aesthetics, optimized.</p>
+      <a href="#" class="app-store-badge" aria-label="Download Aesthetics on the App Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" loading="eager">
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <nav>
+        <a href="/privacy/aesthetics/">Privacy Policy</a>
+        <a href="/terms/aesthetics/">Terms of Service</a>
+        <a href="/support/aesthetics/">Support</a>
+        <a href="/">Foggy Labs</a>
+      </nav>
+      <p class="copyright">&copy; 2026 Fog Hill LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
