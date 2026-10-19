@@ -6,86 +6,83 @@ favicon_emoji: "📷"
 
 # CleanSnap - Privacy Policy
 
-**Last Updated: April 2, 2026**
+**Last Updated: October 18, 2026**
 
 CleanSnap ("we," "us," or "our") operates the CleanSnap mobile application (the "App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App. Please read this policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the App.
 
 ## 1. Information We Collect
 
-### Information You Provide Directly
+### Permission-Based Features
 
-**Photos.** You provide photos from your device library for the App to process. Photos are processed on-device using Apple's Vision and Core Image frameworks. We do not upload your photos to our servers or to third-party servers.
+**Photos and videos.** With Photos access, CleanSnap analyzes media on your device to find matching or similar photos, screenshots, blurry photos, and videos. Compression creates a new copy. CleanSnap does not upload photo or video content to Foggy Labs or analytics services. Apple Photos may download iCloud resources to your device. Review items before removing originals; resource-size estimates do not guarantee recoverable device space.
 
-**Communications.** If you contact our support team, we collect the content of your messages and any information you provide.
+**Contacts and calendars.** Contact Cleanup accesses contacts with your permission, creates a local vCard backup, and lets you combine supported details or explicitly delete contacts. Calendar Cleanup uses calendar permission to review and remove selected events. These contents are processed locally and are not sent to analytics services. You can export contact backups using the iOS share sheet; the destination you choose then handles that copy.
 
-### Information Collected Automatically
+**Private vault.** Imported media and its index are stored in the app's protected local files, excluded from device backup, and accessed through device authentication. Keep another copy of important media: removing the app or losing its data can make vault items unrecoverable. Vault export saves a copy to Photos.
 
-**Usage Data.** We collect information about how you interact with the App, including screens viewed, features used, actions taken, the dates and times of your visits, and session duration.
+**Optional Gmail connection.** Signing in with Google authorizes Gmail read and modify access and access to your Google account email address. CleanSnap requests message IDs and metadata such as sender, subject, date, and unsubscribe headers directly from Google. It does not request message bodies or attachments for cleanup. Trashing selected messages changes your Gmail account and can affect other devices. Unsubscribe links open a website or mail application you choose. OAuth tokens are stored in the iOS Keychain; the connected address is stored in app preferences. Sign out in Email Cleanup to remove the app's saved credentials, or revoke access in your Google Account. Gmail metadata is used for these requested features and is not sent to PostHog or used to train AI models.
 
-**Device Information.** We collect device type, operating system version, unique device identifiers, and general device settings such as language and timezone.
+**Communications.** If you contact our support team, we receive the content and information you choose to provide.
 
-**Crash and Performance Data.** We collect crash logs, error reports, and performance metrics to diagnose and fix issues.
+### Purchases and Optional Analytics
 
-**Attribution Data.** We collect information about how you discovered and installed the App, including which advertisement or campaign led to your install.
+**Purchases.** Apple and RevenueCat process purchase and subscription information, subscription status, and app-user identifiers to verify Pro access and restore purchases. Disabling optional analytics does not disable purchase verification.
+
+**Optional usage analytics.** Share Usage Analytics is off by default. If you enable it in CleanSnap Settings, PostHog receives the app events we record, including onboarding and permission outcomes, feature and purchase interactions, cleanup item counts, estimated media sizes, timestamps, and SDK device/application context such as operating-system and app versions. Network providers can also receive the IP address used to contact them. We do not send photos, contact details, calendar content, email content, or Gmail credentials to PostHog. Automatic screen capture, session replay, and element-interaction capture are disabled. Turning the setting off stops future optional usage analytics and clears the SDK's local analytics storage; it cannot recall requests already transmitted or erase data previously received by a provider.
+
+**Network tools.** The current Speed Test tool makes network requests to Apple endpoints and sends generated test data to httpbin.org. These providers receive network request information, including your IP address. This traffic occurs when you start that tool and is separate from optional usage analytics.
 
 ### Information We Do NOT Collect
 
-- We do not upload your photos to our servers or to any third-party servers.
-- We do not collect precise geolocation data or track your real-time location.
-- We do not access your contacts, microphone, or health data.
-- We do not use device fingerprinting or advertising identifiers (IDFA) for tracking purposes beyond install attribution.
-- We do not share personal data with third-party AI models or services.
+- CleanSnap does not upload photo/video content, contact details, or calendar content to Foggy Labs or analytics providers.
+- We do not request microphone or Health access, or use a device-location permission to track your real-time position. Media may contain existing location metadata, which can be retained in saved media copies.
+- The app does not initialize advertising-attribution SDKs or request an advertising identifier (IDFA).
+- We do not send your media or connected Gmail content to third-party AI models.
 
 ## 2. How We Use Your Information
 
 We use the information we collect to:
 
-- Provide, operate, and maintain the App and its features, including AI-powered photo cleanup and enhancement
+- Provide, operate, and maintain the App and its features, including local photo/video review, compression, contact and calendar cleanup, the private vault, and optional Gmail cleanup
 - Process your subscriptions and manage premium features
 - Monitor and analyze usage trends and preferences to improve the App
-- Measure the effectiveness of our marketing campaigns and understand how users discover the App
 - Detect, prevent, and address technical issues, fraud, and abuse
 - Communicate with you about updates, support requests, and promotional offers related to the App (with your consent where required by law)
 - Comply with legal obligations
 
 ## 3. Photo Processing
 
-All photo processing in CleanSnap occurs on your device using Apple's on-device frameworks. Your original photos are not modified unless you explicitly choose to save the processed result. We do not transmit your photos to any server.
+Photo analysis and compression occur on your device. Compression and vault import create copies; the app asks before deleting selected Photos originals. Compression can be lossy and may not retain every format capability or item of metadata. Review and keep originals when needed. The app does not transmit your photos to Foggy Labs or analytics providers; Apple Photos manages its own iCloud downloads and synchronization.
 
 ## 4. Third-Party Services
 
 We use the following third-party services, each of which has its own privacy policy governing the data it processes:
 
-| Service | Purpose | Data Shared |
-|---------|---------|-------------|
-| PostHog | Product analytics | Anonymous usage data, screen views, feature interactions, session data |
-| Sentry | Crash reporting and error monitoring | Device info, crash logs, anonymized usage context |
-| AppsFlyer | Install attribution and marketing analytics | Device identifiers (where permitted), install source, in-app conversion events |
-| Facebook SDK (Meta) | Advertising attribution and App Events | Install attribution data, anonymized conversion events |
-| Apple StoreKit | In-app purchases and subscriptions | Purchase transactions, subscription status |
+| Service | Purpose | Data Processed |
+|---------|---------|----------------|
+| PostHog (optional) | Usage analytics when enabled | Recorded app events, aggregate cleanup estimates/counts, app/device context |
+| RevenueCat | Pro access and purchase restoration | App-user identifiers, purchase/subscription information and status |
+| Apple Photos / StoreKit | Photo-library access, iCloud resources, in-app purchases | The media and transactions needed for your requested actions |
+| Google OAuth / Gmail API (optional) | Connect Gmail and perform selected account actions | OAuth credentials, account address, message IDs and metadata, trash requests |
+| Apple / httpbin.org (Speed Test) | Network test requests | Request information and generated test data |
 
 We do not sell your personal data to any third party. We do not upload or share your photos with advertising networks or third-party services. We do not provide your data to third-party AI models or machine learning services.
 
-All third-party service providers are contractually required to protect your data with safeguards equal to or greater than those described in this Privacy Policy.
+Each provider also handles information under its own terms and privacy policy.
 
 ## 5. Data Retention
 
-We retain your personal data for as long as the App is installed or as needed to provide you services. Specifically:
+Local preferences, histories, and backups remain in the app until removed or the app's data is deleted. Vault items are excluded from device backup; export important items before removing the app. Photos, contacts, calendar events, and Gmail changes are managed by their respective system or account stores and can remain after uninstalling CleanSnap. Exported contact backups remain wherever you saved them.
 
-- Photos are processed on-device and never stored on our servers.
-- Analytics data is retained for up to 12 months.
-- Crash and performance logs are retained for up to 90 days.
-- Communication records (support emails) are retained for up to 24 months.
-
-When you delete the App, all locally stored data is removed from your device.
+Gmail sign-out removes the credentials saved by CleanSnap and resets its in-memory mailbox state. iOS Keychain items can survive app removal, so sign out or revoke Google access if you no longer want the connection. Turning off optional analytics does not delete data already sent. Provider-side retention depends on the provider's configuration and obligations; contact us about access or deletion of information previously received.
 
 ## 6. Data Security
 
 We implement reasonable administrative, technical, and physical safeguards to protect your personal data, including:
 
-- All photo processing occurs on-device — your photos never leave your device
+- CleanSnap performs photo analysis locally and does not upload media to its servers
 - All data stored locally using iOS system-level encryption
-- No server-side storage of your photos or personal data
+- Media, contact, and calendar contents are not sent to analytics providers; optional Gmail and purchase requests use the providers described above
 
 No method of electronic transmission or storage is 100% secure. While we strive to protect your personal data, we cannot guarantee its absolute security.
 
@@ -93,9 +90,9 @@ No method of electronic transmission or storage is 100% secure. While we strive 
 
 Depending on your location, you may have the following rights:
 
-- **Access.** Your data is stored on your device and accessible to you directly within the App at all times.
-- **Deletion.** Deleting the App removes all locally stored data.
-- **Opt Out of Analytics.** You can limit analytics collection by disabling "Allow Apps to Request to Track" in iOS Settings > Privacy & Security > Tracking.
+- **Access.** Review local content in the relevant system store or app feature. Provider-side information is subject to the access processes of that provider.
+- **Deletion.** Removing the app removes its app-container data, but does not undo changes in Photos, Contacts, Calendar, or Gmail, remove exported copies, cancel subscriptions, or necessarily remove Keychain items. Sign out of Gmail or revoke access separately.
+- **Optional Analytics.** In CleanSnap, open Settings and turn off Share Usage Analytics. It is off by default and your choice persists across launches. The iOS advertising-tracking setting is separate and does not control PostHog usage analytics. Purchase verification and requests you make to Gmail or network tools remain available.
 
 To exercise any of these rights or with questions, please contact us at npc@foggylabs.ai. We will respond within 30 days.
 
@@ -149,4 +146,4 @@ If you have questions about this Privacy Policy, please contact us:
 
 **Email:** npc@foggylabs.ai
 
-This Privacy Policy is effective as of April 2, 2026.
+This Privacy Policy is effective as of October 18, 2026.

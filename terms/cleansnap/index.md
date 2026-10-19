@@ -6,7 +6,7 @@ favicon_emoji: "📷"
 
 # CleanSnap - Terms of Service
 
-**Last Updated: April 5, 2026**
+**Last Updated: October 18, 2026**
 
 ## 1. Agreement to Terms
 
@@ -14,7 +14,7 @@ By downloading, installing, or using CleanSnap ("the App"), you agree to these T
 
 ## 2. Description of Service
 
-CleanSnap is a mobile application that uses on-device AI to clean, enhance, and organize your photos. The App enables users to remove unwanted objects, enhance photo quality, and manage their photo library using Apple's on-device machine learning frameworks. No photos are uploaded to external servers.
+CleanSnap provides on-device photo/video review, duplicate and similarity detection, screenshot and blurry-photo cleanup, compression, a local private vault, contact and calendar cleanup, and optional connected Gmail cleanup. Available tools and Pro access depend on the version and offering shown in the App. CleanSnap does not upload media for server-side processing. Review results before deleting items; similarity and resource-size estimates can be incomplete and do not guarantee device-space recovery. Compression can be lossy. Keep independent copies of important media and contact backups; the local vault is excluded from device backup.
 
 ## 3. Eligibility
 
@@ -22,7 +22,7 @@ You must be at least 13 years old to use the App. By using the App, you represen
 
 ## 4. User Accounts
 
-CleanSnap does not require account creation to use core features. If you purchase a subscription, your purchase is associated with your Apple ID and managed through Apple's App Store.
+CleanSnap does not require a separate account for core local features. Optional Gmail cleanup requires a Google connection and performs actions on that account. Purchases are associated with your Apple ID and managed through Apple's App Store, with RevenueCat used to verify Pro access.
 
 ## 5. Subscriptions and Payments
 
@@ -32,12 +32,11 @@ The App offers free functionality including basic photo cleanup tools with usage
 
 ### Paid Subscriptions
 
-- **CleanSnap Pro Monthly:** $4.99/month. Provides unlimited photo cleanup, all AI enhancement tools, and priority processing.
-- **CleanSnap Pro Annual:** $29.99/year. Same features as Pro Monthly at a discounted annual rate.
+Available offers may include weekly or annual subscriptions and a lifetime one-time purchase. The App shows the current localized price, billing period, and any eligible trial before you purchase; Apple's purchase confirmation is the final transaction summary. Offer availability and pricing can vary by region and account. An introductory trial is offered only when the store reports eligibility. A lifetime purchase does not renew as a subscription.
 
 ### Billing and Renewal
 
-Subscriptions are billed through your Apple ID account. Your subscription will automatically renew at the end of each billing period unless you cancel at least 24 hours before the end of the current period. You can manage and cancel your subscription at any time through your Apple ID account settings at [https://apps.apple.com/account/subscriptions](https://apps.apple.com/account/subscriptions).
+Subscriptions are billed through your Apple ID account. If you accept an eligible trial, the displayed recurring price applies after the trial unless you cancel in time. Your subscription will automatically renew at the end of each billing period unless you cancel at least 24 hours before the end of the current period. You can manage and cancel your subscription at any time through your Apple ID account settings at [https://apps.apple.com/account/subscriptions](https://apps.apple.com/account/subscriptions).
 
 ### Refunds
 
@@ -66,7 +65,7 @@ The App, including its design, features, functionality, and all content created 
 
 ### Your Content
 
-You retain all rights to your photos. By using the App to process your photos, you grant us no license to your photos — all processing occurs on your device and we never access or store your photos.
+You retain all rights to your media. CleanSnap processes media locally and, when you use its vault or compression tools, stores copies in the app or Photos. Your use does not grant Fog Hill LLC a license to upload or use that media for advertising or AI training. Sharing or exporting content uses the destination you choose.
 
 ## 8. Privacy
 
@@ -118,4 +117,4 @@ If you have questions about these Terms, please contact us:
 **Email:** npc@foggylabs.ai
 **Company:** Fog Hill LLC
 
-These Terms are effective as of April 5, 2026.
+These Terms are effective as of October 18, 2026.
