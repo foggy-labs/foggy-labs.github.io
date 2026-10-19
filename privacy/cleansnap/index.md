@@ -6,7 +6,7 @@ favicon_emoji: "📷"
 
 # CleanSnap - Privacy Policy
 
-**Last Updated: October 18, 2026**
+**Last Updated: October 19, 2026**
 
 CleanSnap ("we," "us," or "our") operates the CleanSnap mobile application (the "App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App. Please read this policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the App.
 
@@ -30,7 +30,7 @@ CleanSnap ("we," "us," or "our") operates the CleanSnap mobile application (the 
 
 **Optional usage analytics.** Share Usage Analytics is off by default. If you enable it in CleanSnap Settings, PostHog receives the app events we record, including onboarding and permission outcomes, feature and purchase interactions, cleanup item counts, estimated media sizes, timestamps, and SDK device/application context such as operating-system and app versions. Network providers can also receive the IP address used to contact them. We do not send photos, contact details, calendar content, email content, or Gmail credentials to PostHog. Automatic screen capture, session replay, and element-interaction capture are disabled. Turning the setting off stops future optional usage analytics and clears the SDK's local analytics storage; it cannot recall requests already transmitted or erase data previously received by a provider.
 
-**Network tools.** The current Speed Test tool makes network requests to Apple endpoints and sends generated test data to httpbin.org. These providers receive network request information, including your IP address. This traffic occurs when you start that tool and is separate from optional usage analytics.
+**Network tools.** When you start Speed Test, CleanSnap downloads and uploads about 9 MB of generated test data to Cloudflare’s speed.cloudflare.com endpoints. It does not send your photos, contacts, calendar content, or email content. Cloudflare receives network request information, including your IP address. This traffic occurs when you start that tool and is separate from optional usage analytics.
 
 ### Information We Do NOT Collect
 
@@ -64,7 +64,7 @@ We use the following third-party services, each of which has its own privacy pol
 | RevenueCat | Pro access and purchase restoration | App-user identifiers, purchase/subscription information and status |
 | Apple Photos / StoreKit | Photo-library access, iCloud resources, in-app purchases | The media and transactions needed for your requested actions |
 | Google OAuth / Gmail API (optional) | Connect Gmail and perform selected account actions | OAuth credentials, account address, message IDs and metadata, trash requests |
-| Apple / httpbin.org (Speed Test) | Network test requests | Request information and generated test data |
+| [Cloudflare Speed Test](https://www.cloudflare.com/privacypolicy/) | Network test requests | Request information, including your IP address, and generated test data |
 
 We do not sell your personal data to any third party. We do not upload or share your photos with advertising networks or third-party services. We do not provide your data to third-party AI models or machine learning services.
 
@@ -146,4 +146,4 @@ If you have questions about this Privacy Policy, please contact us:
 
 **Email:** npc@foggylabs.ai
 
-This Privacy Policy is effective as of October 18, 2026.
+This Privacy Policy is effective as of October 19, 2026.
