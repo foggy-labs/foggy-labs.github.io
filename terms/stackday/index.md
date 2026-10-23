@@ -6,7 +6,7 @@ favicon_emoji: "💊"
 
 # StackDay - Terms of Service
 
-**Last Updated: April 5, 2026**
+**Last Updated: October 23, 2026**
 
 ## 1. Agreement to Terms
 
@@ -14,14 +14,14 @@ By downloading, installing, or using StackDay ("the App"), you agree to these Te
 
 ## 2. Description of Service
 
-StackDay is a mobile application that helps users track their daily supplement intake. The App enables users to log which supplements they take, monitor adherence streaks, and view stats about their supplement habits. All data is stored locally on your device using Apple's SwiftData framework. No data is uploaded to external servers.
+StackDay is a mobile application that helps users track their daily supplement intake. The App enables users to log which supplements they take, monitor adherence streaks, and view stats about their supplement habits. Primary records are stored on your device using Apple's SwiftData framework. Optional AI/scanning features transmit relevant inputs to service providers, and analytics, diagnostics, attribution and subscriptions process data as described in our Privacy Policy.
 
 ## 3. Health Disclaimer
 
 **StackDay is NOT a medical device, medical app, or health care product.** The App is intended for general wellness and personal tracking purposes only. It does not provide medical advice, diagnoses, or treatment recommendations.
 
-- The App does not evaluate the safety, efficacy, or interactions of any supplements you log.
-- The App does not recommend, endorse, or suggest any supplement, dosage, or regimen.
+- Informational timing/interaction checks are not exhaustive and do not establish that a combination is safe or effective.
+- Library entries, generic AI information and calculated estimates are not a prescription, endorsement or personalized recommendation of a supplement, dosage or regimen.
 - Information displayed in the App (such as streaks and stats) is for personal organizational use only and should not be interpreted as medical guidance.
 - Always consult a qualified healthcare professional before starting, stopping, or changing any supplement regimen.
 - If you experience any adverse health effects, seek medical attention immediately.
@@ -38,14 +38,9 @@ StackDay does not require account creation to use core features. If you purchase
 
 ## 6. Subscriptions and Payments
 
-### Free Tier
+### Access and Subscription Plans
 
-The App offers free functionality including basic supplement tracking tools with usage limits.
-
-### Paid Subscriptions
-
-- **StackDay Pro Monthly:** $1.99/month. Provides unlimited supplement tracking, full streak and stats features, and all premium tools.
-- **StackDay Pro Annual:** $14.99/year. Same features as Pro Monthly at a discounted annual rate.
+New users need a StackDay Pro subscription to continue after setup. Existing users may retain legacy access. Available plans, prices, billing periods and trial eligibility are displayed in the app before purchase. Do not rely on old quoted prices; the App Store purchase confirmation shows the terms for your country and account. Trial eligibility is determined by Apple and may be limited to new eligible subscribers.
 
 ### Billing and Renewal
 
@@ -77,7 +72,7 @@ The App, including its design, features, functionality, and all content created 
 
 ### Your Content
 
-You retain all rights to the data you enter into the App. All tracking data is stored locally on your device using SwiftData and we never access or store your data on our servers.
+You retain all rights to the data you enter into the App. Primary tracking records are stored on your device using SwiftData. Information sent through optional online features, analytics, diagnostics and subscription services is processed as described in our Privacy Policy.
 
 ## 9. Privacy
 
