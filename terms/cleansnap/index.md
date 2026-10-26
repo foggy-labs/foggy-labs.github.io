@@ -6,7 +6,7 @@ favicon_emoji: "📷"
 
 # CleanSnap - Terms of Service
 
-**Last Updated: October 18, 2026**
+**Last Updated: October 26, 2026**
 
 ## 1. Agreement to Terms
 
@@ -14,7 +14,7 @@ By downloading, installing, or using CleanSnap ("the App"), you agree to these T
 
 ## 2. Description of Service
 
-CleanSnap provides on-device photo/video review, duplicate and similarity detection, screenshot and blurry-photo cleanup, compression, a local private vault, contact and calendar cleanup, and optional connected Gmail cleanup. Available tools and Pro access depend on the version and offering shown in the App. CleanSnap does not upload media for server-side processing. Review results before deleting items; similarity and resource-size estimates can be incomplete and do not guarantee device-space recovery. Compression can be lossy. Keep independent copies of important media and contact backups; the local vault is excluded from device backup.
+CleanSnap provides on-device photo/video review, duplicate and similarity detection, screenshot and blurry-photo cleanup, compression, a local private vault, contact and calendar cleanup. Gmail cleanup is unavailable in version 1.3.1, including its TestFlight builds. Version 1.3 and earlier may still offer Gmail cleanup while the update is pending. Available tools and Pro access depend on the version and offering shown in the App. CleanSnap does not upload media for server-side processing. Review results before deleting items; similarity and resource-size estimates can be incomplete and do not guarantee device-space recovery. Compression can be lossy. Keep independent copies of important media and contact backups; the local vault is excluded from device backup.
 
 ## 3. Eligibility
 
@@ -22,7 +22,7 @@ You must be at least 13 years old to use the App. By using the App, you represen
 
 ## 4. User Accounts
 
-CleanSnap does not require a separate account for core local features. Optional Gmail cleanup requires a Google connection and performs actions on that account. Purchases are associated with your Apple ID and managed through Apple's App Store, with RevenueCat used to verify Pro access.
+CleanSnap does not require a separate account for core local features. Gmail cleanup is unavailable in version 1.3.1, including its TestFlight builds. Version 1.3 and earlier may still offer Gmail cleanup while the update is pending. If you connected Gmail in an earlier version, you can revoke CleanSnap's access in your Google Account. Purchases are associated with your Apple ID and managed through Apple's App Store, with RevenueCat used to verify Pro access.
 
 ## 5. Subscriptions and Payments
 
@@ -117,4 +117,4 @@ If you have questions about these Terms, please contact us:
 **Email:** npc@foggylabs.ai
 **Company:** Fog Hill LLC
 
-These Terms are effective as of October 18, 2026.
+These Terms are effective as of October 26, 2026.

@@ -1,46 +1,50 @@
 ---
 layout: default
 title: CleanSnap - Support
-favicon_emoji: "📷"
 ---
 
 # CleanSnap - Support
 
-Need help with CleanSnap? We're here for you.
+These instructions describe **CleanSnap 1.3.1**, including TestFlight build 12. The App Store may still offer 1.3 while the update is pending; earlier versions can differ, including Gmail availability and analytics controls.
 
-## Contact Us
+Need help? Contact **npc@foggylabs.ai** with your device model, iOS version, CleanSnap version/build, and steps to reproduce. Do not send photos, contact backups, passwords or other private content.
 
-**Email:** [npc@foggylabs.ai](mailto:npc@foggylabs.ai)
+## What does CleanSnap do?
 
-We typically respond within 24 hours.
+Review duplicate and similar photos, screenshots and videos before choosing what to remove. Other tools include supported photo/video compression, contact and calendar cleanup, a private vault, charging animations and a network speed test. Gmail cleanup is unavailable in the 1.3.1.
 
-## Frequently Asked Questions
+## Does it change my originals?
 
-**How does CleanSnap process my photos?**
-CleanSnap uses Apple's on-device Vision and Core Image frameworks to clean and enhance your photos. All processing happens directly on your iPhone — your photos are never uploaded to any server.
+Compression creates copies and keeps originals until you explicitly choose to remove them. Quality, supported metadata and file size vary; compression is not lossless. Unsupported rich formats remain unchanged. The separate Live Photo still-copy workflow keeps its original. Inspect copies in Photos before removing originals.
 
-**Will CleanSnap modify my original photos?**
-No. CleanSnap creates a processed copy. Your original photo is not modified unless you explicitly choose to save the result over it.
+## Why does available space differ from the estimate?
 
-**Why is processing slow on some photos?**
-On-device AI processing depends on your device's hardware. Larger or higher-resolution photos take longer to process. For best performance, make sure your device has sufficient free storage and isn't running many background apps.
+Scan results are estimates and depend on Photos access, completed analysis, supported files and your choices. Recently Deleted and iCloud synchronization can delay changes to available device space. CleanSnap cannot guarantee a specific saving or completion time.
 
-**What's included in the free version?**
-The free tier includes basic photo cleanup tools with daily usage limits. Upgrade to CleanSnap Pro for unlimited cleanups, all AI enhancement tools, and priority processing.
+## What is free?
 
-**How do I manage my subscription?**
-Go to your iPhone Settings > [Your Name] > Subscriptions > CleanSnap. You can upgrade, downgrade, or cancel from there.
+Free use has one-time usage allowances, not a daily reset. Pro offers additional access. Available plans, localized prices and any trial eligibility are shown before purchase; a trial is not guaranteed. CleanSnap does not offer an AI-enhancement or priority-processing entitlement.
 
-**How do I restore my purchases?**
-Open CleanSnap > Settings > Restore Purchases. This will restore any active subscriptions associated with your Apple ID.
+## How do I manage or restore purchases?
 
-**What happens if I delete the app?**
-CleanSnap stores processed photos in your device's photo library. Deleting the app will not remove photos already saved to your library, but any in-progress edits will be lost.
+Use CleanSnap → Settings → Restore Purchases with the Apple Account used for the purchase. Manage subscriptions in iPhone Settings → your name → Subscriptions. Deleting the app does not cancel a subscription. A lifetime purchase is not a renewing subscription.
 
-**I found a bug. How do I report it?**
-Email us at npc@foggylabs.ai with a description of the issue, your device model, and iOS version. Screenshots help!
+## How do I recover deleted photos or saved reviews?
 
-## Legal
+Open Photos → Recently Deleted to review available items. CleanSnap cannot restore permanently removed Photos items. Open CleanSnap → Settings → Help & Recovery to resume saved screenshot/swipe reviews or manage excluded photos. Saved reviews are local to this installation; interrupted compression/deletion jobs do not automatically resume. Check Photos before retrying.
 
-- [Privacy Policy](/privacy/cleansnap/)
-- [Terms of Service](/terms/cleansnap/)
+## How do I protect contacts and calendar data?
+
+Before contact changes, CleanSnap saves a local vCard backup. Export it from Settings → Help & Recovery → Contact Backups & Restore. Open the exported .vcf file and review before adding contacts; import may create duplicates and cannot recover unsupported fields. Calendar deletion has no CleanSnap undo; check your calendar provider's recovery options. Use disposable items when testing.
+
+## What happens to the vault or backups if I delete the app?
+
+Vault files are local and excluded from device backup. Removing CleanSnap or losing its data can permanently lose vault-only items. Unlock each important vault item, export it to Photos and verify the copy first. Export local contact backups to Files or another safe destination. Media already saved to Photos remains in Photos.
+
+## How do I control permissions and analytics?
+
+Manage Photos, Contacts and Calendar permissions in iPhone Settings → Apps → CleanSnap. Share Usage Analytics is off by default and can be changed in CleanSnap Settings. Turning it off stops future optional analytics; it does not erase information already sent. Purchase verification remains separate. Speed Test contacts Cloudflare and uses about 9 MB of generated network traffic.
+
+If you connected Gmail in an earlier version, revoke CleanSnap's access in your Google Account. Version 1.3.1 hides Gmail cleanup and its sign-out screen. Revocation prevents further authorized access but does not erase historical credentials that may remain in this device's Keychain.
+
+[Privacy Policy](https://foggy-labs.github.io/privacy/cleansnap/) · [Terms of Service](https://foggy-labs.github.io/terms/cleansnap/)
